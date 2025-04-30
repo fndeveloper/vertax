@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- ======================== Required meta tags ======================== -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- ======================== FONT AWEOSEOM ======================== -->
+     <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+
+
+  <!-- ======================== FONT AWEOSEOM ======================== -->
+
+  <!-- ======================== EXTERNEL CSS FILE ======================== -->
+  <link rel="stylesheet" href="CSS/style.css">
+  <!-- ======================== EXTERNEL CSS FILE ======================== -->
+
+  <!-- ======================== Bootstrap CSS ======================== -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- ======================== FONT AWESOME CDN ======================== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>BuoySPY | </title>
+  <!-- ======================== intl-tel-input CSS ======================== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+  <!-- ======================== Utils (Optional) ======================== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"></script>
+
+
+</head>
+
+<body>
+
+  <!-- ======================== HEADER START ======================== -->
+
+  <!-- ! NOTE THIS CONTENT IS REMAIN SAME IN EVERY PAGE -->
+  <header>
+    <!-- ======================== NAVBAR START ======================== -->
+    <nav class="navbar large_nav navbar-expand-lg px-0 py-2 container-fluid d-flex flex-column" id="navbar">
+        <div class="container-fluid d-flex flex-row justify-content-between">
+            <!-- ======================== Logo ======================== -->
+            <a class="col-lg-2 col-5" href="#">
+                <img src="Assets/images/Logo/Ai-SS-Logo.png" alt="Logo" class="col-6 img-fluid " id="logo" />
+   
+   
+            </a>
+   
+            <!-- ======================== Toggler Button ======================== -->
+   
+            <button class="btn btn-red navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMain"
+            aria-controls="offcanvasMain">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+            <!-- ======================== Collapsible Navbar Content ======================== -->
+            <div class=" collapse sdsd navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav   mt-2 mb-lg-0 d-lg-flex justify-content-center align-items-center mx-auto  d-none">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <span class="navhover"></span>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  d-flex justify-content-between align-items-center btn" href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Service
+                        </a>
+                        <span class="navhover"></span>
+                        <ul class="dropdown-menu mx-auto">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item  dropdown-toggle nav-link  d-flex justify-content-between align-items-center btn" href="Ai-Product-Solution.html">
+                                    Ai Product Solution  </a>
+                           
+                                    <ul class="dropdown-menu1 list-unstyled child-dropdown">
+                                        <li><a class="dropdown-item" href="buoylight.html">buoylight</a></li>
+                                        <li><a class="dropdown-item" href="buoyspot.html">buoyspot</a></li>
+                                        <li><a class="dropdown-item" href="buoyspy.html">buoyspy</a></li>
+                                        <li><a class="dropdown-item" href="callmatics.html">callmatics</a></li>
+                                        <li><a class="dropdown-item" href="plannet_scan.html">plannetscan</a></li>
+
+                                        
+                                      </ul>
+                                </li>
+                            <li  class="dropdown-submenu"><a class="dropdown-item  dropdown-toggle nav-link  d-flex justify-content-between align-items-center btn" href="GRC-Services.html">GRC Services</a>
+                             <ul class="dropdown-menu1 list-unstyled child-dropdown">
+                                        <li><a class="dropdown-item" href="Governance_Framework_implementations.html">
+                                              Governance Framework <br> implementations</a></li>
+                                        <li><a class="dropdown-item" href="ISO_Frameworks_Implementations.html">
+                                            ISO Frameworks Implementations</a></li>
+                                        <li><a class="dropdown-item" href="Risk_Management_Services.html">Risk Management Services</a></li>
+                                        
+                                      </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item  dropdown-toggle nav-link" href="Web-AppDevelopment.html">AI Driven Web & App Development</a>
+                             <ul class="dropdown-menu1 list-unstyled child-dropdown">
+                                        <li><a class="dropdown-item" href="Custom_Web_&_App_Development.html">
+                                            Custom Web & App Development</a></li>
+                                        <li><a class="dropdown-item" href="E-commerce_Development.html">
+                                            E-commerce Development</a></li>
+                                        <li><a class="dropdown-item" href="Cross_Platform_App_Development.html">
+                                            Cross-Platform App Development</a></li>
+                                        <li><a class="dropdown-item" href="UX_Design_and_Optimization.html">
+                                            UI/UX Design and Optimization</a></li>
+                                        
+                                      </ul>
+                            </li>
+   
+   
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="about.html" aria-expanded="false">
+                            About Us
+                        </a>
+                        <span class="navhover"></span>
+   
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        <span class="navhover"></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                        <span class="navhover"></span>
+                    </li>
+                </ul>
+   
+                <!-- ======================== Offcanvas Button ======================== -->
+                <form class="d-lg-flex d-none ms-auto " role="search">
+                    <div class="input-group">
+                        <button class=" btn-red" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"
+                                aria-controls="offcanvasRight1">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- ======================== Optional Element ======================== -->
+        <div class="" id="navunder"></div>
+    </nav>
+    <!--  ========================== NAVBAR END   ======================== -->
+
+     <!-- ======================== MOBILE NAVBAR START ======================== -->
+     <nav class="navbar d-lg-none">
+      <div class="offcanvas offcanvas-end offcanvas-top1 who  " tabindex="-1" id="offcanvasMain"
+          aria-labelledby="offcanvasMainLabel">
+          <div class="offcanvas-header container">
+              <h5 class="offcanvas-title">
+                  <a class="navbar-brand " href="#">
+                      <img src="Assets/images/Logo/Ai-SS-Logo.png" alt="Logo" class="col-lg-2 col-4" />
+                  </a>
+              </h5>
+              <button type="button" class="text-white bg-transparent border-0" data-bs-dismiss="offcanvas">
+                  <i class="fa-solid fa-xmark text-white fs-1"></i>
+              </button>
+          </div>
+          <div class="offcanvas-body topoff container">
+              <ul class="navbar-nav off_canvas_nav" id="off_canvas_nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" id="service_nav_link" href="#" role="button">
+                          Service
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+              </ul>
+              <div class="d-flex top-header-icon mt-5 pb-3 mt-5">
+                  <a href="https://www.facebook.com/profile.php?id=61575126470129" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.linkedin.comm/company/106962170" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://www.instagram.com/" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.pinterest.com/aisystemsoft/" class="text-white mx-2"><i class="fa-brands fa-pinterest"></i></a>
+              </div>
+
+              <div class="col-lg-6 col-12 ">
+                  <h2 class="display-2 text-white text-end fw-bold top-nav-heading">EXPLORE PAGES</h2>
+              </div>
+
+          </div>
+      </div>
+
+      <!-- SECOND OFFCANVAS (FOR SERVICES) -->
+      <div class="offcanvas offcanvas-end offcanvas-top1 who " tabindex="-1" id="offcanvasService"
+          aria-labelledby="offcanvasServiceLabel">
+          <div class="offcanvas-header container">
+              <h5 class="offcanvas-title">
+                  <a class="navbar-brand " href="#">
+                      <img src="Assets/images/Logo/Ai-SS-Logo.png" alt="Logo" class="col-lg-2 col-4" />
+                  </a>
+              </h5>
+              <button type="button" class="text-white bg-transparent border-0" data-bs-dismiss="offcanvas">
+                  <i class="fa-solid fa-xmark text-white fs-1"></i>
+              </button>
+          </div>
+          <div class="offcanvas-body topoff">
+              <h2 class="text-white">Services</h2>
+              <ul class="navbar-nav off_canvas_nav me-auto mt-4 mb-lg-0"  id="navbarSupportedContent">
+                  <li class="nav-item dropdown pb-3">
+                      <a class=" nav-link dropdown-toggle d-flex justify-content-between align-items-center"
+                          href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Ai Product Solution
+                      </a>
+
+
+                      <ul class="dropdown-menu   list-unstyled ">
+                          <li><a class="dropdown-item" href="buoylight.html">buoylight</a></li>
+                          <li><a class="dropdown-item" href="buoyspot.html">buoyspot</a></li>
+                          <li><a class="dropdown-item" href="buoyspy.html">buoyspy</a></li>
+                          <li><a class="dropdown-item" href="callmatics.html">callmatics</a></li>
+                          <li><a class="dropdown-item" href="plannet_scan.html">plannetscan</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown  py-3">
+                      <a class=" btn d-flex justify-content-between align-items-center dropdown-toggle nav-link"
+                          href="#" id="grc_nav_link" role="button" data-bs-toggle="dropdown" aria-expanded="false">GRC Services</a>
+                          
+                      <ul class="dropdown-menu  list-unstyled child-dropdown">
+                          <li><a class="dropdown-item" href="buoylight.html">
+                                  Governance Framework <br> implementations</a></li>
+                          <li><a class="dropdown-item" href="ISO_Frameworks_Implementations.html">
+                                  ISO Frameworks Implementations</a></li>
+                          <li><a class="dropdown-item" href="Risk_Management_Services.html">Risk
+                                  Management Services</a></li>
+
+                      </ul>
+                  </li>
+             
+                  <li class="nav-item dropdown py-3">
+                      <a class=" lh-1 fs-6 text-start btn dropdown-toggle d-flex justify-content-between align-items-center dropdown-toggle nav-link"
+                          href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">AI
+                          Driven Web & App <br> Development</a>
+                      <ul class="dropdown-menu  list-unstyled child-dropdown">
+                          <li><a class="dropdown-item" href="buoylight.html">
+                                  Custom Web & App Development</a></li>
+                          <li><a class="dropdown-item" href="E-commerce_Development.html">
+                                  E-commerce Development</a></li>
+                          <li><a class="dropdown-item" href="Cross_Platform_App_Development.html">
+                                  Cross-Platform App Development</a></li>
+                          <li><a class="dropdown-item" href="UX_Design_and_Optimization.html">
+                                  UI/UX Design and Optimization</a></li>
+
+                      </ul>
+                  </li>
+
+
+              </ul> 
+
+              <div class="col-lg-6 col-12">
+                  <h2 class="display-2 text-white text-end fw-bold top-nav-heading">EXPLORE PAGES</h2>
+              </div>
+
+          </div>
+      </div>
+  </nav>
+
+  <!-- ======================== MOBILE NAVBAR END ======================== -->
+
+<!-- ======================== INFO CANVAS START ======================== -->
+    <div class="offcanvas offcanvas-end who1 " tabindex="-1" id="offcanvasRight1" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <!-- ======================== Brand Logo and Close Button ======================== -->
+            <div class="d-flex justify-content-between w-100 align-items-center">
+                <img src="Assets/images/Logo/Ai-SS-Logo.png" alt="Runok Logo" class="logo" style="width: 50px;">
+                <button type="button" class="bg-transparent border-0 rounded-circle" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+                    <i class="fa fa-window-close bg text-white1 fs-5 p-2 rounded-circle" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <div class="offcanvas-body ">
+            <!-- ======================== About Section ======================== -->
+            <div class="about-section text-start">
+                <h2 class="fw-bolder py-3 text-white1">
+                </h2>
+                <h5 class="text-white1 fw-light">
+                    AI-GRC-Software Development Solution
+                    We Develop Secure & Intelligent Solutions
+                </h5>
+            </div>
+   
+            <!-- ======================== Contact Info ======================== -->
+            <div class="contact-info mt-1">
+   
+                <p class="pt-3">
+   
+                    <i class="fa-solid fa-location-dot me-2 bg p-2 text-white1 rounded-circle"></i>
+   
+   
+                    <span class="text-white1 pt-5 fs-6">Conroy Windermere, FL-34786, USA</span>
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone me-2  bg p-2 text-white1 rounded-circle"></i>
+   
+   
+                    <span class="text-white1"> + 1 (689) 276-4636</span>
+                </p>
+                <p>
+                    <i class="fa-solid fa-envelope me-2  bg p-2 text-white1 rounded-circle"></i>
+   
+   
+                    <span class="text-white1"> info@aisystemsoft.com</span>
+                </p>
+            </div>
+            <div class="col-12 mx-auto">
+                <img src="Assets/images/Pictures/exp-img-1.jpg" class="img-fluid col-12" alt="">
+            </div>
+            <!-- ======================== Social Media Icons ======================== -->
+            <div class="social-icons  d-flex justify-content-around gap-3 position-absolute bottom-0 col-12 w100 ">
+                <div class="col-8 mx-auto  d-flex flex-row justify-content-between">
+                    <a href="https://www.facebook.com/profile.php?id=61575126470129" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.linkedin.comm/company/106962170" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com/aisystemsoft/" class="text-white mx-2"><i class="fa-brands fa-pinterest"></i></a>
+     
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======================== INFO CANVAS END ======================== -->
+    <!-- ======================== SCROLL TO TOP BTN START  ========================-->
+    <a href="#" class="topbtnfix text-decoration-none">
+      <span id="topbtn"><i class="fa-solid fa-arrow-up p-2"></i></span>
+ 
+ 
+  </a>
+    <!-- ======================== SCROLL TO TOP BTN END  ========================-->
+    </header>
+  <!-- ! NOTE THIS CONTENT IS REMAIN SAME IN EVERY PAGE -->
+
+  <!-- ======================== HEADER END ======================== -->
+
+
+
+<!-- ======================== MAIN 1 START ======================== -->
+<section>
+  <div class="container-fluid home    d-flex flex-column align-items-center justify-content-center">
+    <img src="Assets/images/Banner-Image/buoySPY_banner.jpg" class="m-0 p-0 w-100 position-absolute banner-img " alt="">
+
+  <!-- ======================== MAIN SUB DIV START ======================== -->
+    <!-- ======================== BANNER START ======================== -->
+    <div class="container-fluid home  d-flex flex-column align-items-center justify-content-center   pb-0">
+      <h2 class="text-white mb-3 display-2 fw-bold">BuoySPY<sup class="col-org">TM</sup> </h2>
+      <h4 class="text-white  ">Home / BuoySPY </h4>
+    </div>
+    <!-- ======================== BANNER END ======================== -->
+  
+  <!-- ======================== MAIN SUB DIV END ======================== -->
+  
+   </div>
+</section>
+ <!-- ======================== MAIN 1 END ======================== -->
+
+
+<!-- ================================ MAIN 1 START ============= -->
+ 
+<div class="container-fluid  over pb-5  mt-5 px-2 d-flex flex-lg-row flex-column">
+  <div class="col-lg-3 who p-2 sticky-element border-radious">
+    <h3 class="text-white1 px-2 py-3">AI Product Solution</h3>
+    <!-- ========================  ======================== -->
+    <ul class="list-unstyled px-2">
+      <li class="fs-5 text-white1 mb-3"><a href="buoyspy.html" class="text-white1 text-decoration-none">BuoySPY
+          <sup class="col-org">TM</sup></a></li>
+
+
+    </ul>
+    <div class="col-12 d-flex flex-column px-2 pb-5 product-img">
+      <img src="Assets/images/Service-Image/BuoySPY_service_picture_1.jpg" class="border-radious img-fluid ser-img-1 " alt="">
+      <div class="line px-2"></div>
+    </div>
+    <!-- ========================  ======================== -->
+    <div class="col-12 d-flex flex-column px-2 pb-5">
+      <img src="Assets/images/Service-Image/service-img-10.jpg" class="border-radious img-fluid  ser-img-1" alt="">
+      <h5 class="text-white1 pt-3">How Can We Help</h5>
+      <p class="text-white1 fw-light">If you need any helps, please feel free to contact us.</p>
+      <span class="text-white1 mt-1"><i class="fa fa-phone pe-2 text-white1"></i>+1 (689) 276-4636</span>
+      <span class="text-white1 mt-1"><i class="fa-solid fa-envelope pe-2 text-white1"></i>info@aisystemsoft.com</span>
+
+    </div>
+    <div class="col-12 bg m-0 border-radious ms-lg-auto d-flex flex-column align-items-end  p-2 text-white py-3">
+      <h3 class="text-white1 text-end mb-4">For Inquiry</h3>
+      <input type="text" class="form-control my-2 mb-3 col-10" maxlength="17" placeholder="Your Name" name="name" id="name">
+      <input type="email" class="form-control mb-2 mb-3 col-10" maxlength="17" placeholder="Your Email" name="email" id="email">
+
+
+      <input id="phone" type="tel" class="phonenum mb-3 col-12 mb-3">
+      <div class="col-12 text-center  mt-2">
+        <button type="submit"
+          class="mt-3 mx-auto who text-white1 btn3 col-lg-6 col-6 p-2 d-flex flex-row align-items-center justify-content-center">
+          Submit
+          <i class="fa-solid fa-paper-plane icon-hover"></i>
+
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="col-lg-9 ps-lg-3 mt-lg-0 mt-2">
+    <span></span>
+    <!-- ========================  ======================== -->
+<img src="Assets/images/Service-Image/BuoySPY_service_picture_3.jpg" class="mb-4 ser-img-2 border-radious img-fluid col-12 " alt="">
+    <!-- ========================  ======================== -->
+    <h2 class="fs-1 pb-3 col-org ">Product</h2>
+    <p class="fw-light  fs-5">
+      An AI-base solution to observe activities inside the terminal area round the clock all seasons.
+
+      Detecting and alerting for the people in the terminal area without Safety Helmets, Jackets, Masks, Gloves, etc.
+      
+      Detecting smoke or incident of a fire breakout. Identifying stray animals or littering. Detecting and counting vehicles in the terminal area.
+      
+      For timely actions to minimize losses, reducing the incidence of safety breaches.
+      
+      Our solution is one of the most amazing solution which has been developed on AI technology by using the deep learning and machine learning techniques. For enquiry, please email us at enquiry@perceptronglobal.com
+
+    </p>
+    <!-- ========================  ======================== -->
+    <h2 class="fs-1 pb-3 col-org">Benefit</h2>
+    <p class="fw-light  fs-5">
+      Enhanced operational efficiency is achieved by automating data capture at gates, weighbridges, and cranes, which
+      improves terminal throughput. The solution also delivers significant cost savings by reducing errors and
+      optimizing operations, ultimately saving millions annually for businesses. Real-time data processing allows for
+      instant information access, enabling quick decision-making and minimizing delays across terminal operations.
+    </p>
+    <!-- ========================  ======================== -->
+    <!-- ========================  ======================== -->
+    <h2 class="fs-1 pb-3 col-org ">Advantages:</h2>
+    <p class="fw-light  fs-5">
+      The solution offers seamless integration with Terminal Operating Systems (TOS), ensuring efficient operations
+      across the terminal. It is highly scalable and adaptable to growing demands, with both cloud and on-premise
+      deployment options available. Designed for 24/7 reliability, it operates continuously under the toughest
+      conditions, ensuring uninterrupted performance and boosting operational efficiency.
+    <br>
+    <br>
+
+    It is highly scalable and adaptable to growing demands, with both cloud and on-premise
+    deployment options available. Designed for 24/7 reliability, it operates continuously under the toughest
+    conditions, ensuring uninterrupted performance
+    </p>
+    <!-- ========================  ======================== -->
+    <!-- ========================  ======================== -->
+    <h2 class="fs-1 pb-3 col-org ">Business Planning & Strategy </h2>
+    <p class="fw-light  fs-5">
+      Our approach to planning and strategy for terminal automation centers on helping you implement a clear,
+      actionable roadmap for success with AI-based solutions. We begin by assessing your terminal operations,
+      identifying key areas for improvement in container and vehicle tracking, and pinpointing opportunities for
+      greater efficiency. Together, we define your long-term vision for automation and break it down into achievable
+      milestones, ensuring every step aligns with your operational goals.
+    </p>
+    <p class="fw-light  fs-5">
+      Through tailored coaching, we guide you in deploying AI-powered solutions that optimize leadership, operational
+      efficiency, market positioning, and financial growth. Whether it’s implementing scalable solutions for container
+      tracking at In and Out Gates, Weighbridges, or Quay Cranes, or integrating seamlessly with Terminal Operating
+      Systems (TOS), we provide the insights and tools needed to enhance productivity. </p>
+    <p class="fw-light  fs-5">
+      Our strategy sessions focus on setting realistic targets, navigating industry challenges, and optimizing
+      terminal resources. With a cloud-based solution that’s easy to deploy and manage (with on-premise options
+      available), we empower your terminal to operate 24/7 under the toughest conditions. This innovative approach
+      increases productivity and efficiency, saving millions while helping your business thrive in today’s competitive
+      logistics landscape.
+    </p>
+
+    <div class="col-12 d-flex justify-content-between">
+      <img src="Assets/images/Service-Image/BuoySPY_service_picture_2.jpg" class="border-radious img-fluid col-6 me-2 " alt="">
+      <img src="Assets/images/Service-Image/BuoySPY_service_picture_3.jpg" class=" border-radious img-fluid col-6 " alt="">
+
+
+    </div>
+    <!-- ======================== ACCORDIANS ======================== -->
+    <h2 class="fs-1 pt-4 pb-4 col-org  ">Frequently asked questions </h2>
+  
+    <button class="accordion fs-5">Section 1</button>
+    <div class="panel fs-5 fw-lighter">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    
+    <button class="accordion fs-5">Section 2</button>
+    <div class="panel fs-5 fw-lighter">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    
+    <button class="accordion fs-5">Section 3</button>
+    <div class="panel fs-5 fw-lighter">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <!-- ======================== ACCORDIANS ======================== -->
+  </div>
+</div>
+
+<!-- ================================ MAIN 1 END ================= -->
+ <!-- ======================== FORM START ======================== -->
+ <section>
+  <div class="container-fluid  mt-4 d-flex bg flex-lg-row flex-column frm justify-content-between  mx-0 ">
+
+    <div class="col-lg-9 mx-auto d-flex flex-column align-items-start justify-content-center   px-4">
+      <h2 class="text-center mb-3 mt-5 text-white fw-bolder mx-auto display-6">Schedule Your Meeting</h2>
+      <p class="locte text-white text-center mx-auto fw-lighter ">Fill out the form to schedule a meeting and get the
+        outline and other materials.</p>
+
+        <form class="mt-3 col-12 my-5 form_ser">
+          <div class="row g-3 col-12 bg-white p-2 rounded-2 shadow-lg">
+            <div class="col-md-4 col-12">
+              <label for="firstName" class="form-label">Name:</label>
+              <input type="text" class="form-control" id="firstName" maxlength="17" placeholder="Name" required>
+            </div>
+            <div class="col-md-4">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="email" maxlength="17" placeholder="Email" required>
+            </div>
+            <div class="col-md-4">
+              <label for="phone" class="form-label">Phone Number:</label>
+              <input id="phone" type="tel" class="form-control phonenum" maxlength="17" placeholder="Phone Number">
+            </div>
+                <div class="col-md-4">
+              <label for="country" class="form-label">Country:</label>
+          
+        
+              <select id="country" name="country" class="form-control">
+               
+                  <option value="USA">USA</option>
+                  <option value="Austria">Austria</option>
+                  <option value="Azerbaijan">Azerbaijan</option>
+                  <option value="Bahamas">Bahamas</option>
+                  <option value="Bahrain">Bahrain</option>
+                  <option value="Bangladesh">Bangladesh</option>
+                  <option value="Barbados">Barbados</option>
+                  <option value="Belarus">Belarus</option>
+                  <option value="Belgium">Belgium</option>
+                  <option value="Belize">Belize</option>
+                  <option value="Benin">Benin</option>
+                  <option value="Bermuda">Bermuda</option>
+                  <option value="Bhutan">Bhutan</option>
+                  <option value="Bolivia">Bolivia</option>
+                  <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                  <option value="Botswana">Botswana</option>
+                  <option value="Bouvet Island">Bouvet Island</option>
+                  <option value="Brazil">Brazil</option>
+                  <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                  <option value="Brunei Darussalam">Brunei Darussalam</option>
+                  <option value="Bulgaria">Bulgaria</option>
+                  <option value="Burkina Faso">Burkina Faso</option>
+                  <option value="Burundi">Burundi</option>
+                  <option value="Cambodia">Cambodia</option>
+                  <option value="Cameroon">Cameroon</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Cape Verde">Cape Verde</option>
+                  <option value="Cayman Islands">Cayman Islands</option>
+                  <option value="Central African Republic">Central African Republic</option>
+                  <option value="Chad">Chad</option>
+                  <option value="Chile">Chile</option>
+                  <option value="China">China</option>
+                  <option value="Christmas Island">Christmas Island</option>
+                  <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                  <option value="Colombia">Colombia</option>
+                  <option value="Comoros">Comoros</option>
+                  <option value="Congo">Congo</option>
+                  <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
+                  <option value="Cook Islands">Cook Islands</option>
+                  <option value="Costa Rica">Costa Rica</option>
+                  <option value="Cote D'ivoire">Cote D'ivoire</option>
+                  <option value="Croatia">Croatia</option>
+                  <option value="Cuba">Cuba</option>
+                  <option value="Cyprus">Cyprus</option>
+                  <option value="Czech Republic">Czech Republic</option>
+                  <option value="Denmark">Denmark</option>
+                  <option value="Djibouti">Djibouti</option>
+                  <option value="Dominica">Dominica</option>
+                  <option value="Dominican Republic">Dominican Republic</option>
+                  <option value="Ecuador">Ecuador</option>
+                  <option value="Egypt">Egypt</option>
+                  <option value="El Salvador">El Salvador</option>
+                  <option value="Equatorial Guinea">Equatorial Guinea</option>
+                  <option value="Eritrea">Eritrea</option>
+                  <option value="Estonia">Estonia</option>
+                  <option value="Ethiopia">Ethiopia</option>
+                  <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+                  <option value="Faroe Islands">Faroe Islands</option>
+                  <option value="Fiji">Fiji</option>
+                  <option value="Finland">Finland</option>
+                  <option value="France">France</option>
+                  <option value="French Guiana">French Guiana</option>
+                  <option value="French Polynesia">French Polynesia</option>
+                  <option value="French Southern Territories">French Southern Territories</option>
+                  <option value="Gabon">Gabon</option>
+                  <option value="Gambia">Gambia</option>
+                  <option value="Georgia">Georgia</option>
+                  <option value="Germany">Germany</option>
+                  <option value="Ghana">Ghana</option>
+                  <option value="Gibraltar">Gibraltar</option>
+                  <option value="Greece">Greece</option>
+                  <option value="Greenland">Greenland</option>
+                  <option value="Grenada">Grenada</option>
+                  <option value="Guadeloupe">Guadeloupe</option>
+                  <option value="Guam">Guam</option>
+                  <option value="Guatemala">Guatemala</option>
+                  <option value="Guernsey">Guernsey</option>
+                  <option value="Guinea">Guinea</option>
+                  <option value="Guinea-bissau">Guinea-bissau</option>
+                  <option value="Guyana">Guyana</option>
+                  <option value="Haiti">Haiti</option>
+                  <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+                  <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+                  <option value="Honduras">Honduras</option>
+                  <option value="Hong Kong">Hong Kong</option>
+                  <option value="Hungary">Hungary</option>
+                  <option value="Iceland">Iceland</option>
+                  <option value="India">India</option>
+                  <option value="Indonesia">Indonesia</option>
+                  <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+                  <option value="Iraq">Iraq</option>
+                  <option value="Ireland">Ireland</option>
+                  <option value="Isle of Man">Isle of Man</option>
+                  <option value="Israel">Israel</option>
+                  <option value="Italy">Italy</option>
+                  <option value="Jamaica">Jamaica</option>
+                  <option value="Japan">Japan</option>
+                  <option value="Jersey">Jersey</option>
+                  <option value="Jordan">Jordan</option>
+                  <option value="Kazakhstan">Kazakhstan</option>
+                  <option value="Kenya">Kenya</option>
+                  <option value="Kiribati">Kiribati</option>
+                  <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
+                  <option value="Korea, Republic of">Korea, Republic of</option>
+                  <option value="Kuwait">Kuwait</option>
+                  <option value="Kyrgyzstan">Kyrgyzstan</option>
+                  <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+                  <option value="Latvia">Latvia</option>
+                  <option value="Lebanon">Lebanon</option>
+                  <option value="Lesotho">Lesotho</option>
+                  <option value="Liberia">Liberia</option>
+                  <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+                  <option value="Liechtenstein">Liechtenstein</option>
+                  <option value="Lithuania">Lithuania</option>
+                  <option value="Luxembourg">Luxembourg</option>
+                  <option value="Macao">Macao</option>
+                  <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option>
+                  <option value="Madagascar">Madagascar</option>
+                  <option value="Malawi">Malawi</option>
+                  <option value="Malaysia">Malaysia</option>
+                  <option value="Maldives">Maldives</option>
+                  <option value="Mali">Mali</option>
+                  <option value="Malta">Malta</option>
+                  <option value="Marshall Islands">Marshall Islands</option>
+                  <option value="Martinique">Martinique</option>
+                  <option value="Mauritania">Mauritania</option>
+                  <option value="Mauritius">Mauritius</option>
+                  <option value="Mayotte">Mayotte</option>
+                  <option value="Mexico">Mexico</option>
+                  <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+                  <option value="Moldova, Republic of">Moldova, Republic of</option>
+                  <option value="Monaco">Monaco</option>
+                  <option value="Mongolia">Mongolia</option>
+                  <option value="Montenegro">Montenegro</option>
+                  <option value="Montserrat">Montserrat</option>
+                  <option value="Morocco">Morocco</option>
+                  <option value="Mozambique">Mozambique</option>
+                  <option value="Myanmar">Myanmar</option>
+                  <option value="Namibia">Namibia</option>
+                  <option value="Nauru">Nauru</option>
+                  <option value="Nepal">Nepal</option>
+                  <option value="Netherlands">Netherlands</option>
+                  <option value="Netherlands Antilles">Netherlands Antilles</option>
+                  <option value="New Caledonia">New Caledonia</option>
+                  <option value="New Zealand">New Zealand</option>
+                  <option value="Nicaragua">Nicaragua</option>
+                  <option value="Niger">Niger</option>
+                  <option value="Nigeria">Nigeria</option>
+                  <option value="Niue">Niue</option>
+                  <option value="Norfolk Island">Norfolk Island</option>
+                  <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                  <option value="Norway">Norway</option>
+                  <option value="Oman">Oman</option>
+                  <option value="Pakistan">Pakistan</option>
+                  <option value="Palau">Palau</option>
+                  <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+                  <option value="Panama">Panama</option>
+                  <option value="Papua New Guinea">Papua New Guinea</option>
+                  <option value="Paraguay">Paraguay</option>
+                  <option value="Peru">Peru</option>
+                  <option value="Philippines">Philippines</option>
+                  <option value="Pitcairn">Pitcairn</option>
+                  <option value="Poland">Poland</option>
+                  <option value="Portugal">Portugal</option>
+                  <option value="Puerto Rico">Puerto Rico</option>
+                  <option value="Qatar">Qatar</option>
+                  <option value="Reunion">Reunion</option>
+                  <option value="Romania">Romania</option>
+                  <option value="Russian Federation">Russian Federation</option>
+                  <option value="Rwanda">Rwanda</option>
+                  <option value="Saint Helena">Saint Helena</option>
+                  <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                  <option value="Saint Lucia">Saint Lucia</option>
+                  <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                  <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+                  <option value="Samoa">Samoa</option>
+                  <option value="San Marino">San Marino</option>
+                  <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                  <option value="Saudi Arabia">Saudi Arabia</option>
+                  <option value="Senegal">Senegal</option>
+                  <option value="Serbia">Serbia</option>
+                  <option value="Seychelles">Seychelles</option>
+                  <option value="Sierra Leone">Sierra Leone</option>
+                  <option value="Singapore">Singapore</option>
+                  <option value="Slovakia">Slovakia</option>
+                  <option value="Slovenia">Slovenia</option>
+                  <option value="Solomon Islands">Solomon Islands</option>
+                  <option value="Somalia">Somalia</option>
+                  <option value="South Africa">South Africa</option>
+                  <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
+                  <option value="Spain">Spain</option>
+                  <option value="Sri Lanka">Sri Lanka</option>
+                  <option value="Sudan">Sudan</option>
+                  <option value="Suriname">Suriname</option>
+                  <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+                  <option value="Swaziland">Swaziland</option>
+                  <option value="Sweden">Sweden</option>
+                  <option value="Switzerland">Switzerland</option>
+                  <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+                  <option value="Taiwan">Taiwan</option>
+                  <option value="Tajikistan">Tajikistan</option>
+                  <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+                  <option value="Thailand">Thailand</option>
+                  <option value="Timor-leste">Timor-leste</option>
+                  <option value="Togo">Togo</option>
+                  <option value="Tokelau">Tokelau</option>
+                  <option value="Tonga">Tonga</option>
+                  <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                  <option value="Tunisia">Tunisia</option>
+                  <option value="Turkey">Turkey</option>
+                  <option value="Turkmenistan">Turkmenistan</option>
+                  <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                  <option value="Tuvalu">Tuvalu</option>
+                  <option value="Uganda">Uganda</option>
+                  <option value="Ukraine">Ukraine</option>
+                  <option value="United Arab Emirates">United Arab Emirates</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="United States">United States</option>
+                  <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                  <option value="Uruguay">Uruguay</option>
+                  <option value="Uzbekistan">Uzbekistan</option>
+                  <option value="Vanuatu">Vanuatu</option>
+                  <option value="Venezuela">Venezuela</option>
+                  <option value="Viet Nam">Viet Nam</option>
+                  <option value="Virgin Islands, British">Virgin Islands, British</option>
+                  <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+                  <option value="Wallis and Futuna">Wallis and Futuna</option>
+                  <option value="Western Sahara">Western Sahara</option>
+                  <option value="Yemen">Yemen</option>
+                  <option value="Zambia">Zambia</option>
+                  <option value="Zimbabwe">Zimbabwe</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="date" class="form-label">Date:</label>
+              <input type="date" class="form-control text-dark" id="date" required>
+            </div>
+            <div class="col-md-4">
+              <label for="start-time" class="form-label">Start Time:</label>
+              <input id="start-time" type="time" class="form-control text-dark" name="start-time" required>
+            </div>
+            <div class="col-md-4">
+              <label for="end-time" class="form-label">End Time:</label>
+              <input id="end-time" class="form-control text-dark" type="time" name="end-time" required>
+            </div>
+            <div class="col-12 text-center mb-2">
+              <button type="submit" class="mt-3 mx-auto btn3 col-lg-4 col-6 p-2 d-flex flex-row align-items-center justify-content-center">
+                SUBMIT
+                <i class="fa-solid fa-paper-plane icon-hover"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+        
+    </div>
+
+
+  </div>
+</section>
+  <!-- ======================== FORM END ======================== -->
+  <!-- ======================== OUR PRODUCT START======================== -->
+  <section>
+    <div class="container-fluid roun my-5 p-3  bg d-flex flex-row justify-content-center pos align-items-center">
+
+      <div class="d-flex flex-row justify-content-center flex-column">
+        <h4 class="text-white float-start">Our Products</h4>
+
+        <swiper-container class="mySwiper container bg-white col-12" slides-per-view="3" autoplay-delay="1500"
+          space-between="30">
+          <swiper-slide><img src="Assets/images/Products-images/automan.png" class="img-fluid mx-lg-4 "
+              alt="automan"></swiper-slide>
+          <swiper-slide><img src="Assets/images/Products-images/buoylight.png" class="img-fluid mx-lg-4"
+              alt="buoylight"></swiper-slide>
+          <swiper-slide> <img src="Assets/images/Products-images/buoyspot.png" class="img-fluid mx-lg-4"
+              alt="buoyspot"></swiper-slide>
+          <swiper-slide><img src="Assets/images/Products-images/callmatics.png" class="img-fluid mx-lg-4"
+              alt="callmatics"></swiper-slide>
+          <swiper-slide><img src="Assets/images/Products-images/carmatics.png" class="img-fluid mx-lg-4"
+              alt="carmatics"></swiper-slide>
+          <swiper-slide><img src="Assets/images/Products-images/facematics.png" class="img-fluid mx-lg-4"
+              alt="facematics"></swiper-slide>
+          <swiper-slide><img src="Assets/images/Products-images/inteliOCR.png" class="img-fluid mx-lg-4"
+              alt="inteliOCR"></swiper-slide>
+          <swiper-slide> <img src="Assets/images/Products-images/iport.png" class="img-fluid mx-lg-4"
+              alt="iport"></swiper-slide>
+          <swiper-slide> <img src="Assets/images/Products-images/mallmatics-02.png" class="img-fluid mx-lg-4"
+              alt="mallmatics"></swiper-slide>
+
+          <swiper-slide><img src="Assets/images/Products-images/planetscan.png" class="img-fluid mx-lg-4"
+              alt="mallmatics"></swiper-slide>
+
+          <swiper-slide><img src="Assets/images/Products-images/mallmatics.png" class="img-fluid mx-lg-4"
+              alt="mallmatics"></swiper-slide>
+          <swiper-slide><img src="Assets/images/Products-images/medbot.png" class="img-fluid mx-lg-4"
+              alt="medbot"></swiper-slide>
+          <swiper-slide><img src="Assets/images/Products-images/meddroid.png" class="img-fluid mx-lg-4"
+              alt="meddroid"></swiper-slide>
+          <swiper-slide><img src="Assets/images/Products-images/mediatalks.png" class="img-fluid mx-lg-4"
+              alt="mediatalks"></swiper-slide>
+          <swiper-slide><img src="Assets/images/Products-images/posmatics.png" class="img-fluid mx-lg-4"
+              alt="facematics"></swiper-slide>
+          <swiper-slide><img src="Assets/images/Products-images/predicto.png" class="img-fluid mx-lg-4"
+              alt="inteliOCR"></swiper-slide>
+          <swiper-slide> <img src="Assets/images/Products-images/retailatics.png" class="img-fluid mx-lg-4"
+              alt="iport"></swiper-slide>
+          <swiper-slide> <img src="Assets/images/Products-images/retailmatics.png" class="img-fluid mx-lg-4"
+              alt="mallmatics"></swiper-slide>
+
+        </swiper-container>
+
+
+
+        <div class="col-12">
+          <h4 class="float-end mt-3 text-white">Ultimate AI Powered Products</h4>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- ======================== OUR PRODUCT END======================== -->
+ <!-- ======================== FOOTER START ======================== -->
+  <!-- ! NOTE THIS CONTENT IS REMAIN SAME IN EVERY PAGE -->
+  <footer class=" footer pt-5 py-3">
+
+    <div class="container-fluid footer-content px-4 py-3">
+      <div class="row">
+        <div class="col-lg-3  col-12 mb-4">
+          <img src="Assets/images/Logo/Ai-SS-Logo.png" alt="Cybron Logo" class="mb-3 col-lg-4 col-3 m-0 p-0">
+
+          <p class="locte text-white1 fs-6 ">AI-GRC-Software Development Solution . We Develop Secure & Intelligent
+            Solutions</p>
+          <!-- ======================== <p><a href="mailto:cybron@cybroninternational.com" class="text-white1">cybron@cybroninternational.com</a></p> ======================== -->
+        </div>
+
+        <div class="col-lg-3  col-12 col-md-6 mb-4 ps-lg-5">
+          <h3 class="mb-3 text-white1">Usefull Links</h3>
+          <ul class="list-unstyled fs-6">
+            <li class="mb-1 "><a href="index.html" class="text-white1 fw-lighter text-decoration-none ">Home</a>
+              <span class="navhover"></span>
+            </li>
+            <li class="mb-1"><a href="about.html" class="text-white1 fw-lighter text-decoration-none">About Us</a></li>
+            <li class="mb-1"><a href="portfolio.html" class="text-white1 fw-lighter text-decoration-none">Portfolio</a>
+            </li>
+            <li class="mb-1"><a href="Ai-Product-Solution.html"
+                class="text-white1 fw-lighter text-decoration-none">Service</a></li>
+            <li class="mb-1"><a href="contact.html" class="text-white1 fw-lighter text-decoration-none">Contact Us</a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="col-lg-3 col-12 col-md-6 mb-4 ps-lg-5">
+          <h3 class="mb-3 text-white1">Contact Us</h3>
+          <ul class="list-unstyled fs-6">
+            <li class="mb-1"><a
+                href="mailto:info@aisystemsoft.com?subject=Inquiry&body=Hello, I would like to know more about your services."
+                class="text-white1 fw-lighter text-decoration-none"> info@aisystemsoft.com</a></li>
+            <li class="mb-1 mt-2"><a href="tel:+16892764636" class="text-white1 fw-lighter text-decoration-none">+1
+                (689) 276-4636</a></li>
+
+
+            <li class="mb-1 mt-2"><a href="https://www.google.com/maps/place/Conroy+Windermere,+FL-34786,+USA"
+                class="text-white1 fw-lighter text-decoration-none">
+                Conroy Windermere,<br> FL-34786, USA
+              </a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-12 col-md-6 mb-4">
+          <h3 class="mb-3 text-white1">Subscribe newsletter</h3>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" maxlength="17" placeholder="Email Address" aria-label="Recipient's username"
+              aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn bg text-white1" type="button">
+                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <p class="mb-0 mx-auto   pb-3 text-white1 container bg rounded-3 border-0   p-3  text-center bottom-footer ">© 2024
+      AiSystemSoft
+      All Rights Reserved</p>
+  </footer>
+    <!-- ! NOTE THIS CONTENT IS REMAIN SAME IN EVERY PAGE -->
+  <!-- ======================== FOOTER END ======================== -->
+
+  <!-- ======================== Option 1: Bootstrap Bundle with Popper ======================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- ======================== SWIPER CDN ======================== -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+  <!-- ======================== EXTERNEL JS FILE ======================== -->
+  <script src="JS/app.js"></script>
+  <!-- ======================== EXTERNEL JS FILE ======================== -->
+
+</body>
+
+</html>

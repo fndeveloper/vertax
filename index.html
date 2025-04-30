@@ -1,0 +1,946 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- ======================== Required meta tags ======================== -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- ======================== FONT AWEOSEOM ======================== -->
+  <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+
+  <!-- ======================== FONT AWEOSEOM ======================== -->
+  <title>Vertax Solution | </title>
+  <!-- ======================== EXTERNEL CSS FILE ======================== -->
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <!-- ======================== EXTERNEL CSS FILE ======================== -->
+
+  <!-- ======================== Bootstrap CSS ======================== -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- ======================== FONT AWESOME CDN ======================== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ======================== intl-tel-input CSS ======================== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+  <!-- ======================== Utils (Optional) ======================== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"></script>
+  <!-- ======================== SWIPER CDN ======================== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- ======================== SWIPER CDN ======================== -->
+  <!-- ======================== Swiper CSS ======================== -->
+  <link rel="stylesheet" href="https://cdn.jspak vs nzdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+
+  <!-- ======================== HEADER START ======================== -->
+
+  <!-- ! NOTE THIS CONTENT IS REMAIN SAME IN EVERY PAGE -->
+  <header>
+    <!-- ======================== NAVBAR START ======================== -->
+    <nav class="navbar large_nav navbar-expand-lg px-0 py-2 container-fluid d-flex flex-column" id="navbar">
+        <div class="container-fluid d-flex flex-row justify-content-between">
+            <!-- ======================== Logo ======================== -->
+            <a class="col-lg-2 col-5 text-decoration-none d-flex flex-row align-items-center" href="#">
+                <!-- <img src="Assets/images/Logo/Ai-SS-Logo.png" alt="Logo" class="col-6 img-fluid " id="logo" /> -->
+   <h5 class="text-decoration-none col-org lh-1 pt-1">Vertax <br> Solution</h5>
+   
+            </a>
+   
+            <!-- ======================== Toggler Button ======================== -->
+   
+            <button class="btn btn-red navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMain"
+            aria-controls="offcanvasMain">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+            <!-- ======================== Collapsible Navbar Content ======================== -->
+            <div class=" collapse sdsd navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav   mt-2 mb-lg-0 d-lg-flex justify-content-center align-items-center mx-auto  d-none">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <span class="navhover"></span>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  d-flex justify-content-between align-items-center btn" href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Service
+                        </a>
+                        <span class="navhover"></span>
+                        <ul class="dropdown-menu mx-auto">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item  dropdown-toggle nav-link  d-flex justify-content-between align-items-center btn" href="Ai-Product-Solution.html">
+                                    Ai Product Solution  </a>
+                           
+                                    <ul class="dropdown-menu1 list-unstyled child-dropdown">
+                                        <li><a class="dropdown-item" href="buoylight.html">buoylight</a></li>
+                                        <li><a class="dropdown-item" href="buoyspot.html">buoyspot</a></li>
+                                        <li><a class="dropdown-item" href="buoyspy.html">buoyspy</a></li>
+                                        <li><a class="dropdown-item" href="callmatics.html">callmatics</a></li>
+                                        <li><a class="dropdown-item" href="plannet_scan.html">plannetscan</a></li>
+
+                                        
+                                      </ul>
+                                </li>
+                            <li  class="dropdown-submenu"><a class="dropdown-item  dropdown-toggle nav-link  d-flex justify-content-between align-items-center btn" href="GRC-Services.html">GRC Services</a>
+                             <ul class="dropdown-menu1 list-unstyled child-dropdown">
+                                        <li><a class="dropdown-item" href="Governance_Framework_implementations.html">
+                                              Governance Framework <br> implementations</a></li>
+                                        <li><a class="dropdown-item" href="ISO_Frameworks_Implementations.html">
+                                            ISO Frameworks Implementations</a></li>
+                                        <li><a class="dropdown-item" href="Risk_Management_Services.html">Risk Management Services</a></li>
+                                        
+                                      </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item  dropdown-toggle nav-link" href="Web-AppDevelopment.html">AI Driven Web & App Development</a>
+                             <ul class="dropdown-menu1 list-unstyled child-dropdown">
+                                        <li><a class="dropdown-item" href="Custom_Web_&_App_Development.html">
+                                            Custom Web & App Development</a></li>
+                                        <li><a class="dropdown-item" href="E-commerce_Development.html">
+                                            E-commerce Development</a></li>
+                                        <li><a class="dropdown-item" href="Cross_Platform_App_Development.html">
+                                            Cross-Platform App Development</a></li>
+                                        <li><a class="dropdown-item" href="UX_Design_and_Optimization.html">
+                                            UI/UX Design and Optimization</a></li>
+                                        
+                                      </ul>
+                            </li>
+   
+   
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="about.html" aria-expanded="false">
+                            About Us
+                        </a>
+                        <span class="navhover"></span>
+   
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        <span class="navhover"></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                        <span class="navhover"></span>
+                    </li>
+                </ul>
+   
+                <!-- ======================== Offcanvas Button ======================== -->
+                <form class="d-lg-flex d-none ms-auto " role="search">
+                    <div class="input-group">
+                        <button class=" btn-red" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"
+                                aria-controls="offcanvasRight1">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- ======================== Optional Element ======================== -->
+        <div class="" id="navunder"></div>
+    </nav>
+    <!--  ========================== NAVBAR END   ======================== -->
+
+     <!-- ======================== MOBILE NAVBAR START ======================== -->
+     <nav class="navbar d-lg-none">
+      <div class="offcanvas offcanvas-end offcanvas-top1 who  " tabindex="-1" id="offcanvasMain"
+          aria-labelledby="offcanvasMainLabel">
+          <div class="offcanvas-header container">
+              <h5 class="offcanvas-title">
+                  <a class="navbar-brand " href="#">
+                      <img src="Assets/images/Logo/Ai-SS-Logo.png" alt="Logo" class="col-lg-2 col-4" />
+                  </a>
+              </h5>
+              <button type="button" class="text-white bg-transparent border-0" data-bs-dismiss="offcanvas">
+                  <i class="fa-solid fa-xmark text-white fs-1"></i>
+              </button>
+          </div>
+          <div class="offcanvas-body topoff container">
+              <ul class="navbar-nav off_canvas_nav" id="off_canvas_nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" id="service_nav_link" href="#" role="button">
+                          Service
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+              </ul>
+              <div class="d-flex top-header-icon mt-5 pb-3 mt-5">
+                  <a href="https://www.facebook.com/profile.php?id=61575126470129" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.linkedin.comm/company/106962170" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://www.instagram.com/" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.pinterest.com/aisystemsoft/" class="text-white mx-2"><i class="fa-brands fa-pinterest"></i></a>
+              </div>
+
+              <div class="col-lg-6 col-12 ">
+                  <h2 class="display-2 text-white text-end fw-bold top-nav-heading">EXPLORE PAGES</h2>
+              </div>
+
+          </div>
+      </div>
+
+      <!-- SECOND OFFCANVAS (FOR SERVICES) -->
+      <div class="offcanvas offcanvas-end offcanvas-top1 who " tabindex="-1" id="offcanvasService"
+          aria-labelledby="offcanvasServiceLabel">
+          <div class="offcanvas-header container">
+              <h5 class="offcanvas-title">
+                  <a class="navbar-brand " href="#">
+                      <img src="Assets/images/Logo/Ai-SS-Logo.png" alt="Logo" class="col-lg-2 col-4" />
+                  </a>
+              </h5>
+              <button type="button" class="text-white bg-transparent border-0" data-bs-dismiss="offcanvas">
+                  <i class="fa-solid fa-xmark text-white fs-1"></i>
+              </button>
+          </div>
+          <div class="offcanvas-body topoff">
+              <h2 class="text-white">Services</h2>
+              <ul class="navbar-nav off_canvas_nav me-auto mt-4 mb-lg-0"  id="navbarSupportedContent">
+                  <li class="nav-item dropdown pb-3">
+                      <a class=" nav-link dropdown-toggle d-flex justify-content-between align-items-center"
+                          href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Ai Product Solution
+                      </a>
+
+
+                      <ul class="dropdown-menu   list-unstyled ">
+                          <li><a class="dropdown-item" href="buoylight.html">buoylight</a></li>
+                          <li><a class="dropdown-item" href="buoyspot.html">buoyspot</a></li>
+                          <li><a class="dropdown-item" href="buoyspy.html">buoyspy</a></li>
+                          <li><a class="dropdown-item" href="callmatics.html">callmatics</a></li>
+                          <li><a class="dropdown-item" href="plannet_scan.html">plannetscan</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown  py-3">
+                      <a class=" btn d-flex justify-content-between align-items-center dropdown-toggle nav-link"
+                          href="#" id="grc_nav_link" role="button" data-bs-toggle="dropdown" aria-expanded="false">GRC Services</a>
+                          
+                      <ul class="dropdown-menu  list-unstyled child-dropdown">
+                          <li><a class="dropdown-item" href="buoylight.html">
+                                  Governance Framework <br> implementations</a></li>
+                          <li><a class="dropdown-item" href="ISO_Frameworks_Implementations.html">
+                                  ISO Frameworks Implementations</a></li>
+                          <li><a class="dropdown-item" href="Risk_Management_Services.html">Risk
+                                  Management Services</a></li>
+
+                      </ul>
+                  </li>
+             
+                  <li class="nav-item dropdown py-3">
+                      <a class=" lh-1 fs-6 text-start btn dropdown-toggle d-flex justify-content-between align-items-center dropdown-toggle nav-link"
+                          href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">AI
+                          Driven Web & App <br> Development</a>
+                      <ul class="dropdown-menu  list-unstyled child-dropdown">
+                          <li><a class="dropdown-item" href="buoylight.html">
+                                  Custom Web & App Development</a></li>
+                          <li><a class="dropdown-item" href="E-commerce_Development.html">
+                                  E-commerce Development</a></li>
+                          <li><a class="dropdown-item" href="Cross_Platform_App_Development.html">
+                                  Cross-Platform App Development</a></li>
+                          <li><a class="dropdown-item" href="UX_Design_and_Optimization.html">
+                                  UI/UX Design and Optimization</a></li>
+
+                      </ul>
+                  </li>
+
+
+              </ul> 
+
+              <div class="col-lg-6 col-12">
+                  <h2 class="display-2 text-white text-end fw-bold top-nav-heading">EXPLORE PAGES</h2>
+              </div>
+
+          </div>
+      </div>
+  </nav>
+
+  <!-- ======================== MOBILE NAVBAR END ======================== -->
+
+<!-- ======================== INFO CANVAS START ======================== -->
+    <div class="offcanvas offcanvas-end who1 " tabindex="-1" id="offcanvasRight1" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <!-- ======================== Brand Logo and Close Button ======================== -->
+            <div class="d-flex justify-content-between w-100 align-items-center">
+                <img src="Assets/images/Logo/Ai-SS-Logo.png" alt="Runok Logo" class="logo" style="width: 50px;">
+                <button type="button" class="bg-transparent border-0 rounded-circle" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+                    <i class="fa fa-window-close bg text-white1 fs-5 p-2 rounded-circle" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <div class="offcanvas-body ">
+            <!-- ======================== About Section ======================== -->
+            <div class="about-section text-start">
+                <h2 class="fw-bolder py-3 text-white1">
+                </h2>
+                <h5 class="text-white1 fw-light">
+                    AI-GRC-Software Development Solution
+                    We Develop Secure & Intelligent Solutions
+                </h5>
+            </div>
+   
+            <!-- ======================== Contact Info ======================== -->
+            <div class="contact-info mt-1">
+   
+                <p class="pt-3">
+   
+                    <i class="fa-solid fa-location-dot me-2 bg p-2 text-white1 rounded-circle"></i>
+   
+   
+                    <span class="text-white1 pt-5 fs-6">Conroy Windermere, FL-34786, USA</span>
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone me-2  bg p-2 text-white1 rounded-circle"></i>
+   
+   
+                    <span class="text-white1"> + 1 (689) 276-4636</span>
+                </p>
+                <p>
+                    <i class="fa-solid fa-envelope me-2  bg p-2 text-white1 rounded-circle"></i>
+   
+   
+                    <span class="text-white1"> info@aisystemsoft.com</span>
+                </p>
+            </div>
+            <div class="col-12 mx-auto">
+                <img src="Assets/images/Pictures/exp-img-1.jpg" class="img-fluid col-12" alt="">
+            </div>
+            <!-- ======================== Social Media Icons ======================== -->
+            <div class="social-icons  d-flex justify-content-around gap-3 position-absolute bottom-0 col-12 w100 ">
+                <div class="col-8 mx-auto  d-flex flex-row justify-content-between">
+                    <a href="https://www.facebook.com/profile.php?id=61575126470129" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.linkedin.comm/company/106962170" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com/aisystemsoft/" class="text-white mx-2"><i class="fa-brands fa-pinterest"></i></a>
+     
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======================== INFO CANVAS END ======================== -->
+    <!-- ======================== SCROLL TO TOP BTN START  ========================-->
+    <a href="#" class="topbtnfix text-decoration-none">
+      <span id="topbtn"><i class="fa-solid fa-arrow-up p-2"></i></span>
+ 
+ 
+  </a>
+    <!-- ======================== SCROLL TO TOP BTN END  ========================-->
+    </header>
+  <!-- ! NOTE THIS CONTENT IS REMAIN SAME IN EVERY PAGE -->
+
+  <!-- ======================== HEADER END ======================== -->
+
+
+  <!-- ======================== MAIN 1 START ======================== -->
+  <section>
+    <div class="container-fluid  mb-5 home_new d-flex flex-column align-items-center justify-content-center">
+      <!-- =============================== BANNER IMAGE START =========================================== -->
+      <img src="Assets/images/Banner-Image/main_banner.png" class="m-0  p-0 w-100 position-absolute banner-img_new "
+        alt="">
+      <!-- =============================== BANNER IMAGE END =========================================== -->
+      <!-- ======================== MAIN SUB DIV START ======================== -->
+
+      <div class="col-xxl-12 col-xl-12 col-12  d-flex  flex-column align-items-start ">
+       
+
+          <h2
+            class="display-2 text-white fw-bolder text-start  head-1  col-lg-12 col-xxl-12 col-xl-12 col-12  py-y">
+            We handle IT, <br> you grow your business.
+          
+          </h2>
+
+          <h4 class="text-start pt-lg-3 d-lg-flex  text-white fw-light">Take charge of your business continuity <br> with innovative IT solutions
+          </h4>
+
+          <button class="btn-53 col-2 mt-3">
+            <div class="original">Shedule Meeting</div>
+            <a href="" class="text-white  text-decoration-none">
+            <div class="letters">
+              
+            <span>Shedule Meeting</span>
+          </div>
+          </a>
+          </button>
+
+        </div>
+    
+
+          
+
+      <!-- ======================== MAIN SUB DIV END ======================== -->
+
+    </div>
+  </section>
+  <!-- ======================== MAIN 1 END ======================== -->
+
+
+  <!-- ======================== FOOTPRINTS & PROJECT START ======================== -->
+  <section>
+
+    <div
+      class="container-fluid d-flex flex-lg-row align-items-lg-center flex-column mt-lg-0 mt-5 justify-content-between">
+      <div class="d-flex flex-lg-row flex-column align-items-lg-center ">
+        <h2 class="strk text-start position-relative ">Footprints & <br> Projects </span></h2>
+
+
+      </div>
+      <div class="d-flex  justify-content-end col-lg-3 mt-5 mt-lg-0">
+        <h4 class="text-end">Innovate Intelligent, Digitalization Gets Benefit ing Together.</h4>
+      </div>
+    </div>
+
+    <div class="container-fluid who  p-3 d-flex flex-lg-row flex-column p-0 m-0 justify-content-between">
+
+      <div class="col-lg-3 col-md-6 col-12  text-white1 d-flex flex-row  align-items-center">
+        <img src="Assets/images/Pictures/testimonial.jpg" class="img-fluid col-12 h-100  rounded-3 i22" alt="">
+
+      </div>
+      <div class="col-lg-3 pt-lg-0 pt-3  col-md-6 col-12 d-flex flex-column ">
+        <h2 class="display-6 fw-normal col-lg-12 text-white1"><span class="num">30</span>+ Years Experience Team of
+          Consultants</h2>
+        <p class="text-white fw-light py-4"> We are dedicated to delivering innovative solutions that drive success and
+          optimize operations for our clients.</p>
+        <div class="custom-navigation">
+          <button id="prevBtn"><i class="fa-solid fa-arrow-left"></i></button>
+          <button id="nextBtn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+
+      </div>
+      <div class="col-lg-5 col-md-6  col-12 text-white1">
+        <div class="slider-container col-12">
+
+          <div class="slider-wrapper " id="sliderWrapper">
+
+            <div class="slider-item d-flex flex-column">
+              <span><i class="fa-solid fa-quote-left fs-1"></i></span>
+              <h5 class="fw-light fs-5"> The organization have a team of researchers, marketers , and experienced
+                consultants, who have the extensive experience in their dosections as well as the exposure of the
+                international countries like UK, Europe, Middle East and Far East and implemented more than 1500 plus
+                project .</h5>
+              <span><i class="fa-solid fa-quote-right fs-1 float-end"></i></span>
+            </div>
+            <div class="slider-item d-flex flex-column">
+              <span><i class="fa-solid fa-quote-left fs-1"></i></span>
+              <h5 class="fw-light fs-5"> The organization have a team of researchers, marketers , and experienced
+                consultants, who have the extensive experience in their dosections as well as the exposure of the
+                international countries like UK, Europe, Middle East and Far East and implemented more than 1500 plus
+                project .</h5>
+              <span><i class="fa-solid fa-quote-right fs-1 float-end"></i></span>
+            </div>
+            <div class="slider-item d-flex flex-column">
+              <span><i class="fa-solid fa-quote-left fs-1"></i></span>
+              <h5 class="fw-light fs-5"> The organization have a team of researchers, marketers , and experienced
+                consultants, who have the extensive experience in their dosections as well as the exposure of the
+                international countries like UK, Europe, Middle East and Far East and implemented more than 1500 plus
+                project .</h5>
+              <span><i class="fa-solid fa-quote-right fs-1 float-end"></i></span>
+            </div>
+            <div class="slider-item d-flex flex-column">
+              <span><i class="fa-solid fa-quote-left fs-1"></i></span>
+              <h5 class="fw-light fs-5"> The organization have a team of researchers, marketers , and experienced
+                consultants, who have the extensive experience in their dosections as well as the exposure of the
+                international countries like UK, Europe, Middle East and Far East and implemented more than 1500 plus
+                project .</h5>
+              <span><i class="fa-solid fa-quote-right fs-1 float-end"></i></span>
+            </div>
+            <div class="slider-item d-flex flex-column">
+              <span><i class="fa-solid fa-quote-left fs-1"></i></span>
+              <h5 class="fw-light fs-5"> The organization have a team of researchers, marketers , and experienced
+                consultants, who have the extensive experience in their dosections as well as the exposure of the
+                international countries like UK, Europe, Middle East and Far East and implemented more than 1500 plus
+                project .</h5>
+              <span><i class="fa-solid fa-quote-right fs-1 float-end"></i></span>
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+  <!-- ======================== FOOTPRINTS & PROJECT END ======================== -->
+  <section>
+    <div
+      class="container-fluid d-flex flex-lg-row my-5 py-5  align-items-lg-center flex-column mt-lg-0 mt-5 justify-content-between">
+      <div class="d-flex flex-lg-row flex-column align-items-lg-center ">
+        <h2 class="strk text-start position-relative">Services
+          &<br> Portfolios</span></h2>
+
+
+      </div>
+      <div class="d-flex justify-content-end col-lg-4 mt-5 mt-lg-0">
+        <h4 class="text-end">Digitalized your Strategies & Redefining Future.</h4>
+      </div>
+    </div>
+  </section>
+  <!-- ======================== SERVICE & PORTFOLIO START ======================== -->
+  <section>
+    <div class="container-fluid d-flex flex-column cardss">
+      <div class="col-lg-12 col-12 my-2 d-flex flex-lg-row flex-column  cardss1">
+        <!-- ================ AI PRODUCT & SOLUTION START   ================-->
+        <div class="col-lg-6 col-12 d-flex flex-row">
+          <div class="col-2 col-22 d-flex flex-row align-items-center justify-content-center">
+
+            <i class="fa-solid fa-robot my-4   d-flex flex-row align-items-center"></i>
+          </div>
+          <div class="col-10 ms-2 py-4">
+
+            <h2 class="d-flex flex-row align-items-center ">AI Products & Solutions</h2>
+            <p class=" col-lg-11 col-12 py-3  paraa-1 fw-normal fs-6 fw-normal fs-6  text-jus">We as team of researchers
+              and consultants develops AI Enabled
+              Proprietory based secured solutions that
+              empowering businesses. It streamline lined operations, helps to enhance decision-making, and moving
+              towards
+              to innovations. Industry oriented solutions to ensure optimal efficiency and scalability.
+            </p>
+            <div class="mx-auto col-12 d-flex flex-row  align-items-center">
+              <button class="mx-1 col-5 set-btn">More-Info
+                <span class="set-btn-hover d-flex flex-row align-items-center justify-content-center">
+                  <a href="Ai-Product-Solution.html" class="col-12">
+
+                    <i class="fa-solid fa-calendar tex">
+
+                    </i>
+                  </a></span>
+              </button>
+
+
+            </div>
+          </div>
+          <div class="cardss-hover">fgfg</div>
+        </div>
+        <!-- ================ AI PRODUCT & SOLUTION END ================ -->
+       
+        <!-- ================ GRC SERVICES  START   ================-->
+        <div class="col-lg-6 col-12 d-flex flex-row mt-lg-5 pt-lg-5">
+          <div class="col-2 col-22 d-flex flex-row align-items-center justify-content-center">
+            <i class="fas fa-balance-scale my-4   d-flex flex-row align-items-center "></i>
+          </div>
+          <div class="col-10 ms-2 py-4">
+
+            <h2 class="d-flex flex-row align-items-center ">GRC Services</h2>
+            <p class="col-lg-11 col-12 py-3  paraa-1 fw-normal fs-6">We are offering GRC (Governance, Risk, and
+              Compliance) services
+              that makes you secured and complainced. Our top notch services, like ISO 27001 (Information Security
+              Management System), ISO 22301 BCM (Business
+              Continuity Management), ISO 31000 RMS (Risk Management) etc. implementations are streamlined your
+              businesses
+              with technological and company policies thats make you effective, efficient and gearing up to the
+              excellence.</p>
+            <div class="mx-auto col-12 d-flex flex-row  align-items-center">
+              <button class="mx-1 col-5 set-btn">More-Info
+                <span class="set-btn-hover d-flex flex-row align-items-center justify-content-center">
+                  <a href="GRC-Services.html" class="col-12">
+
+                    <i class="fa-solid fa-calendar tex">
+
+                    </i>
+                  </a></span>
+              </button>
+
+
+            </div>
+          </div>
+        </div>
+        <!-- ================ GRC SERVICES END ================ -->
+
+      </div>
+
+
+      <div class="col-lg-12 col-12 my-2   cardss1">
+        <div class="col-lg-6 col-12 d-flex flex-row mt-lg-5 pt-lg-3">
+          <div class="col-2 col-22 d-flex flex-row align-items-center justify-content-center">
+            <i class="fa fa-code my-4   d-flex flex-row align-items-center "></i>
+          </div>
+          <div class="col-10 ms-2 py-4">f
+
+            <h2 class="d-flex flex-row align-items-center "> AI Driven Web & App Development</h2>
+            <p class=" col-lg-11 col-12 py-3  paraa-1 fw-normal fs-6 ">We have senior team of developers and architects
+              that can enable
+              your websites through cutting-edge AI
+              enabled technlogies that makes your businesses interactive on real-time basis and convert your leads into
+              sales.
+              Whether it would be E-Commerce Solutions, market place websites, web data analytics, converging rate etc.
+              or
+              either AI Enabled Digital Marketing soltutions. We can enable or develop these sort of solutions as per
+              your
+              desire
+              and make you prominent in the business world.
+
+            </p>
+            <div class="mx-auto col-12 d-flex flex-row  align-items-center">
+              <button class="mx-1 col-5 set-btn">More-Info
+                <span class="set-btn-hover d-flex flex-row align-items-center justify-content-center">
+                  <a href="Web-AppDevelopment.html" class="col-12">
+
+                    <i class="fa-solid fa-calendar tex">
+
+                    </i>
+                  </a></span>
+              </button>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="cardss-hover"></div>
+      </div>
+
+    </div>
+  </section>
+  <!-- ======================== SERVICE & PORTFOLIO END ======================== -->
+
+  <!-- ======================== ABOUT-US START ======================== -->
+  <section>
+    <div class="container-fluid mt-5 py-5 who d-flex flex-column justify-content-center align-items-center">
+      <div class="container d-flex flex-lg-row flex-column py-5">
+        <p class="pe-5 fs-4 text-white col-lg-5">About Us </p>
+        <h2 class="text-white1 col-lg-7 fs-5 fw-light text-end ">
+
+          We are highly passionate team of consultants that comprises of technologist, researchers
+          and professionals who had delivered more than 1500 projects in the different vicinities of world that are
+          UK, USA, Middle East, Far East etc. Due to our team wonderful and powerful backgrounds related to different
+          business
+          understandings and processes, the teams knows the best suitable technologies for your business.
+        </h2>
+      </div>
+      <div class="container d-flex flex-lg-row flex-column py-5 gth">
+        <div class="col-lg-3 me-3 rounded-3">
+          <img src="Assets/images/Pictures/why-pic-1.jpg" class="img-fluid col-12" alt="">
+        </div>
+        <div class="col-lg-3 mt-4">
+          <img src="Assets/images/Pictures/why-pic-2.jpg" class="img-fluid col-12" alt="">
+
+        </div>
+        <div class="col-lg-6 col-12 pt-4 ms-lg-5 d-flex flex-column justify-content-center">
+          <h5 class="text-white1 bg p-2 rounded-3 text-jus fs-6 fw-light pe-lg-3 col-lg-11 text-jus ">
+
+            We know that every business does not required the same solutions, therefore, we devise customize and
+            plugged-in
+            solutions for your organization that makes you more comfortable and help to increase the productivity.
+
+          </h5>
+          <h5 class="text-white1 text-jus bg p-2 rounded-3  fs-6 fw-light pe-lg-3  pt-lg-2 col-lg-11 text-jus">
+            Since 1993, we are committed to deliver the different project in multinational organizations and provide
+            our expertise to Public (Government) and Private sectors & establishing the trust among them. Our solutions
+            can be integrated advanced AI System and ensuring that your businesses can work more efficiently. Further,
+            we are available to provide the services of risk management that includes to
+            identify, assess, and mitigate risks of your process and
+            enable compliances with regulatory standards.
+
+          </h5>
+          <h5 class="text-white1 bg p-2 rounded-3 fs-6 fw-light pe-lg-3  pt-lg-2 col-lg-11 text-jus">
+
+            You are welcome anytime to contact us through the web form on the provided link
+          </h5>
+          <div class="d-flex flex-row col-12">
+
+            <!-- ========================  ======================== -->
+
+
+
+            <!-- ========================  ======================== -->
+          </div>
+        </div>
+      </div>
+      <div class="container ">
+        <div
+          class="col-lg-8 klo py-3 col-12 ms-auto p-3 d-flex flex-lg-row flex-md-row flex-row align-items-center justify-content-lg-around">
+          <div class="col-lg-2 col-md-3 col-4 ">
+            <h2 class="display-5 text-white fw-bold ">70+</h2>
+            <h6 class="text-white fw-normal">Professional <br> Experts</h6>
+          </div>
+          <div class="col-lg-2 col-md-3 col-4">
+            <h2 class="display-5 text-white fw-bold">1.5K+</h2>
+            <h6 class="text-white fw-normal">Project <br> Complete</h6>
+          </div>
+          <div class="col-lg-2 col-md-3 col-4">
+            <h2 class="display-5 text-white fw-bold">800+</h2>
+            <h6 class="text-white fw-normal">World-Wide<br> Cleints</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ======================== ABOUT-US END ======================== -->
+
+
+  <!-- ======================== CONTACT-US START ======================== -->
+  <section>
+    <div
+      class="container-fluid d-flex flex-lg-row py-5   text-white1 align-items-lg-center flex-column mt-lg-0 mt-5 justify-content-between">
+      <div class="d-flex flex-lg-row flex-column align-items-lg-center ">
+        <h2 class="strk text-start position-relative ">Contact
+          Us</span></h2>
+
+
+      </div>
+      <div class="d-flex text-dark1 justify-content-end col-lg-4 mt-5 mt-lg-0">
+        <h4 class="text-end text-capitalize">Establish Trust</h4>
+      </div>
+    </div>
+    <div class="container-fluid m-0 who py-4 d-flex flex-column align-items-center">
+
+
+      <h2 class="fs-1  text-white1">Let’s Plan Together</h2>
+      <p class="col-text fs-6 py-4 fw-normal locte  text-white1">
+        Design, Architect, Develop & Automate your business processes through AI. Increase your business
+        productivity!</span></p>
+      <div class="d-flex flex-lg-row flex-column container-fluid px-5 gap-2">
+
+
+        <div
+          class="col-lg-4 col-12 my-2 borders p-2 rounded-3 d-flex  flex-column justify-content-center justify-content-lg-start align-items-center shadow-sm   adbook">
+          <i class="fa-solid fa-location-dot bg fs-4 mt-2 bg-col text-white1 p-3  rounded"></i>
+
+
+          <h5 class="mt-2  ps-lg-2 text-white fw-light">Location</h5>
+          <span class="col-text locte text-white fw-light text-center ps-lg-2  text-center">
+            P. O. Box 409, 9300 Conroy
+            Windermere, Windermere, FL-34786, USA</span>
+
+
+        </div>
+
+        <div
+          class="col-lg-4 col-12 my-2 borders p-2 rounded-3 text-white1 d-flex  flex-column justify-content-center justify-content-lg-start align-items-center shadow-sm   adbook">
+
+          <i class="fa-solid fa-headset bg fs-4 mt-2 bg-col text-white1 p-3 rounded"></i>
+
+          <h5 class="mt-2">Support</h5>
+          <span class="col-text locte ps-lg-2 text-lg-start text-center">
+            + 1 (689) 276-4636</span>
+
+
+        </div>
+        <div
+          class="col-lg-4 col-12 my-2 borders p-2 rounded-3 text-white1 d-flex  flex-column justify-content-center justify-content-lg-start align-items-center shadow-sm   adbook">
+
+
+          <i class="fa-solid fa-envelope fs-4 mt-2 bg text-white1 p-3 rounded"></i>
+          <h5 class="mt-2">Email</h5>
+          <span class="col-text locte ps-lg-2 text-lg-start text-center ">
+            info@aisystemsoft.com
+          </span>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+    <div class="container-fluid who m-0 d-flex flex-lg-row flex-column justify-content-between   pt-5 contact-page">
+      <div class="col-lg-6">
+        <img src="Assets/images/Pictures/co.jpg" class="img-fluid col-12 contact_image" alt="">
+      </div>
+
+      <div class="col-lg-6 bg1 py-5 col-12 d-flex flex-column align-items-start  formm px-4">
+        <h4 class="text-white1 text-end col-12 pb-3">For Any Assitance –<br>Kindly Provide Your Information</h4>
+        <!-- CONTACT FORM START -->
+        <form class="mt-5" id="form">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <input type="text" class="form-control form-control1" id="firstName" maxlength="17" placeholder="First Name" required>
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control form-control1" id="lastName" maxlength="17" placeholder="Last Name" required>
+            </div>
+
+
+            <div class="col-md-6">
+              <input type="email" class="form-control form-control1 " id="email" maxlength="17" placeholder="Your Email" required>
+            </div>
+            <div class="col-md-6  ">
+              <input id="phone" type="tel" class="mb-3 col-12 mb-3 phonenum form-control1">
+            </div>
+            <div class="col-md-12">
+              <select class="form-select form-control1" id="queryTopic" aria-label="Default select example">
+
+                <option value="AI Products & Solutions">AI Products & Solutions</option>
+                <option value="GRC Services">GRC Services</option>
+                <option value="AI Driven  Web & App Development">AI Driven Web & App Development</option>
+
+
+              </select>
+
+            </div>
+            <div class="col-12">
+              <textarea class="form-control form-control1" id="message" rows="4"
+                maxlength="17" placeholder="Write your message here..."></textarea>
+            </div>
+          
+          </div>
+        </form>
+        <!-- CONTACT FORM END -->
+      </div>
+
+
+    </div>
+
+  </section>
+  <!-- ======================== CONTACT-US END ======================== -->
+
+  <!-- ======================== OUR PRODUCT START======================== -->
+  <section>
+    <div class="container-fluid roun my-5 p-3  bg d-flex flex-row justify-content-center pos align-items-center">
+
+      <div class="d-flex flex-row justify-content-center flex-column">
+        <h4 class="text-white float-start">Our Products</h4>
+
+        <swiper-container class="mySwiper container bg-white col-12" slides-per-view="3" autoplay-delay="1500"
+          space-between="30">
+          <swiper-slide><img src="Assets/images/Products-images/automan.png" class="img-fluid mx-lg-4 "
+              alt="automan"></swiper-slide>
+          <swiper-slide><img src="Assets/images/Products-images/buoylight.png" class="img-fluid mx-lg-4"
+              alt="buoylight"></swiper-slide>
+          <swiper-slide> <img src="Assets/images/Products-images/buoyspot.png" class="img-fluid mx-lg-4"
+              alt="buoyspot"></swiper-slide>
+          <swiper-slide><img src="Assets/images/Products-images/callmatics.png" class="img-fluid mx-lg-4"
+              alt="callmatics"></swiper-slide>
+          <swiper-slide><img src="Assets/images/Products-images/carmatics.png" class="img-fluid mx-lg-4"
+              alt="carmatics"></swiper-slide>
+          <swiper-slide><img src="Assets/images/Products-images/facematics.png" class="img-fluid mx-lg-4"
+              alt="facematics"></swiper-slide>
+          <swiper-slide><img src="Assets/images/Products-images/inteliOCR.png" class="img-fluid mx-lg-4"
+              alt="inteliOCR"></swiper-slide>
+          <swiper-slide> <img src="Assets/images/Products-images/iport.png" class="img-fluid mx-lg-4"
+              alt="iport"></swiper-slide>
+          <swiper-slide> <img src="Assets/images/Products-images/mallmatics-02.png" class="img-fluid mx-lg-4"
+              alt="mallmatics"></swiper-slide>
+
+          <swiper-slide><img src="Assets/images/Products-images/planetscan.png" class="img-fluid mx-lg-4"
+              alt="mallmatics"></swiper-slide>
+
+          <swiper-slide><img src="Assets/images/Products-images/mallmatics.png" class="img-fluid mx-lg-4"
+              alt="mallmatics"></swiper-slide>
+          <swiper-slide><img src="Assets/images/Products-images/medbot.png" class="img-fluid mx-lg-4"
+              alt="medbot"></swiper-slide>
+          <swiper-slide><img src="Assets/images/Products-images/meddroid.png" class="img-fluid mx-lg-4"
+              alt="meddroid"></swiper-slide>
+          <swiper-slide><img src="Assets/images/Products-images/mediatalks.png" class="img-fluid mx-lg-4"
+              alt="mediatalks"></swiper-slide>
+          <swiper-slide><img src="Assets/images/Products-images/posmatics.png" class="img-fluid mx-lg-4"
+              alt="facematics"></swiper-slide>
+          <swiper-slide><img src="Assets/images/Products-images/predicto.png" class="img-fluid mx-lg-4"
+              alt="inteliOCR"></swiper-slide>
+          <swiper-slide> <img src="Assets/images/Products-images/retailatics.png" class="img-fluid mx-lg-4"
+              alt="iport"></swiper-slide>
+          <swiper-slide> <img src="Assets/images/Products-images/retailmatics.png" class="img-fluid mx-lg-4"
+              alt="mallmatics"></swiper-slide>
+
+        </swiper-container>
+
+
+
+        <div class="col-12">
+          <h4 class="float-end mt-3 text-white">Ultimate AI Powered Products</h4>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- ======================== OUR PRODUCT END======================== -->
+
+  <!-- ======================== FOOTER START ======================== -->
+  <!-- ! NOTE THIS CONTENT IS REMAIN SAME IN EVERY PAGE -->
+  <footer class=" footer pt-5 py-3">
+
+    <div class="container-fluid footer-content px-4 py-3">
+      <div class="row">
+        <div class="col-lg-3  col-12 mb-4">
+          <img src="Assets/images/Logo/Ai-SS-Logo.png" alt="Cybron Logo" class="mb-3 col-lg-4 col-3 m-0 p-0">
+
+          <p class="locte text-white1 fs-6 ">AI-GRC-Software Development Solution . We Develop Secure & Intelligent
+            Solutions</p>
+          <!-- ======================== <p><a href="mailto:cybron@cybroninternational.com" class="text-white1">cybron@cybroninternational.com</a></p> ======================== -->
+        </div>
+
+        <div class="col-lg-3  col-12 col-md-6 mb-4 ps-lg-5">
+          <h3 class="mb-3 text-white1">Usefull Links</h3>
+          <ul class="list-unstyled fs-6">
+            <li class="mb-1 "><a href="index.html" class="text-white1 fw-lighter text-decoration-none ">Home</a>
+              <span class="navhover"></span>
+            </li>
+            <li class="mb-1"><a href="about.html" class="text-white1 fw-lighter text-decoration-none">About Us</a></li>
+            <li class="mb-1"><a href="portfolio.html" class="text-white1 fw-lighter text-decoration-none">Portfolio</a>
+            </li>
+            <li class="mb-1"><a href="Ai-Product-Solution.html"
+                class="text-white1 fw-lighter text-decoration-none">Service</a></li>
+            <li class="mb-1"><a href="contact.html" class="text-white1 fw-lighter text-decoration-none">Contact Us</a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="col-lg-3 col-12 col-md-6 mb-4 ps-lg-5">
+          <h3 class="mb-3 text-white1">Contact Us</h3>
+          <ul class="list-unstyled fs-6">
+            <li class="mb-1"><a
+                href="mailto:info@aisystemsoft.com?subject=Inquiry&body=Hello, I would like to know more about your services."
+                class="text-white1 fw-lighter text-decoration-none"> info@aisystemsoft.com</a></li>
+            <li class="mb-1 mt-2"><a href="tel:+16892764636" class="text-white1 fw-lighter text-decoration-none">+1
+                (689) 276-4636</a></li>
+
+
+            <li class="mb-1 mt-2"><a href="https://www.google.com/maps/place/Conroy+Windermere,+FL-34786,+USA"
+                class="text-white1 fw-lighter text-decoration-none">
+                Conroy Windermere,<br> FL-34786, USA
+              </a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-12 col-md-6 mb-4">
+          <h3 class="mb-3 text-white1">Subscribe newsletter</h3>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" maxlength="17" placeholder="Email Address" aria-label="Recipient's username"
+              aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn bg text-white1" type="button">
+                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <p class="mb-0 mx-auto   pb-3 text-white1 container bg rounded-3 border-0   p-3  text-center bottom-footer ">© 2024
+      AiSystemSoft
+      All Rights Reserved</p>
+  </footer>
+    <!-- ! NOTE THIS CONTENT IS REMAIN SAME IN EVERY PAGE -->
+  <!-- ======================== FOOTER END ======================== -->
+
+  <!-- ======================== Option 1: Bootstrap Bundle with Popper ======================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- ======================== SWIPER CDN ======================== -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+  <!-- ======================== EXTERNEL JS FILE ======================== -->
+  <script src="JS/app.js"></script>
+  <!-- ======================== EXTERNEL JS FILE ======================== -->
+
+</body>
+
+</html>
