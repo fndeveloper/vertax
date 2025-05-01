@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- ======================== SWIPER CDN ======================== -->
   <!-- ======================== Swiper CSS ======================== -->
-  <link rel="stylesheet" href="https://cdn.jspak vs nzdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -303,7 +303,7 @@
       <div class="offcanvas-header">
         <!-- ======================== Brand Logo and Close Button ======================== -->
         <div class="d-flex justify-content-between w-100 align-items-center">
-          <img src="Assets/images/Logo/Ai-SS-Logo.png" alt="Runok Logo" class="logo" style="width: 50px;">
+          <img src="Assets/images/Logo/Ai-SS-Logo.png" alt="Runok Logo" >
           <button type="button" class="bg-transparent border-0 rounded-circle" data-bs-dismiss="offcanvas"
             aria-label="Close">
             <i class="fa fa-window-close bg text-white1 fs-5 p-2 rounded-circle" aria-hidden="true"></i>
@@ -427,26 +427,26 @@
      
       <div class="container-fluid px-4">
         <div class="text-center mb-5">
-          <div class="d-flex justify-content-center align-items-center gap-2 text-primary fw-medium mb-3">
-            <div class="bg-primary" style="height: 1px; width: 2rem;"></div>
+          <div class="d-flex justify-content-center align-items-center gap-2 col-org fw-medium mb-3">
+            <div class="bg" ></div>
             <span>About Us</span>
-            <div class="bg-primary" style="height: 1px; width: 2rem;"></div>
+            <div class="bg"></div>
           </div>
           <h2 class="display-5 fw-bold text-dark">Crafting Digital Excellence</h2>
-          <p class="text-muted mx-auto" style="max-width: 700px;">We're not just developers – we're digital craftsmen who transform ideas into powerful, scalable solutions that drive business growth.</p>
+          <p class="text-muted mx-auto">We're not just developers – we're digital craftsmen who transform ideas into powerful, scalable solutions that drive business growth.</p>
         </div>
     
         <div class="row align-items-center gy-5">
           <!-- Image and Stats -->
           <div class="col-lg-6 position-relative">
-            <div class="rounded-4 overflow-hidden shadow-lg position-relative z-1">
-              <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=2070&q=80" class="img-fluid" alt="Team collaboration" style="height: 500px; object-fit: cover;">
-              <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to top right, rgba(13,110,253,0.2), transparent);"></div>
+            <div class="rounded-4 overflow-hidden shadow-lg position-relative">
+              <img src="Assets/images/Pictures/about_home_img.png" class="img-fluid col-12" alt="Team collaboration">
+              <div class="position-absolute top-0 start-0 w-100 h-100" ></div>
             </div>
-            <div class="position-absolute bg-white rounded-3 shadow p-4" style="bottom: -1.5rem; right: -1.5rem; width: 16rem; z-index: 2;">
+            <div class="position-absolute bg-white rounded-3 shadow p-4 bottom-0 end-0 mb-2" >
               <div class="d-flex align-items-center mb-3">
-                <div class="bg-primary bg-opacity-10 rounded-circle p-3 me-3">
-                  <i class="bi bi-activity text-primary fs-4"></i>
+                <div class="bg bg-opacity-10 rounded-circle p-3 me-3">
+                  <i class="bi bi-activity col-org fs-4"></i>
                 </div>
                 <div>
                   <h4 class="mb-0 fw-bold">250+</h4>
@@ -454,8 +454,8 @@
                 </div>
               </div>
               <div class="d-flex align-items-center">
-                <div class="bg-primary bg-opacity-10 rounded-circle p-3 me-3">
-                  <i class="bi bi-globe2 text-primary fs-4"></i>
+                <div class="bg bg-opacity-10 rounded-circle p-3 me-3">
+                  <i class="bi bi-globe2 col-org fs-4"></i>
                 </div>
                 <div>
                   <h4 class="mb-0 fw-bold">15+</h4>
@@ -472,40 +472,32 @@
             
             <div class="row g-3 mb-4">
               <div class="col-6 d-flex align-items-center">
-                <i class="bi bi-code-slash text-primary fs-4 me-3"></i>
+                <i class="bi bi-code-slash col-org fs-4 me-3"></i>
                 <span class="fw-medium">Custom Development</span>
               </div>
               <div class="col-6 d-flex align-items-center">
-                <i class="bi bi-patch-check text-primary fs-4 me-3"></i>
+                <i class="bi bi-patch-check col-org fs-4 me-3"></i>
                 <span class="fw-medium">Quality Assurance</span>
               </div>
               <div class="col-6 d-flex align-items-center">
-                <i class="bi bi-lightning text-primary fs-4 me-3"></i>
+                <i class="bi bi-lightning col-org fs-4 me-3"></i>
                 <span class="fw-medium">Agile Methodology</span>
               </div>
               <div class="col-6 d-flex align-items-center">
-                <i class="bi bi-globe text-primary fs-4 me-3"></i>
+                <i class="bi bi-globe col-org fs-4 me-3"></i>
                 <span class="fw-medium">Global Reach</span>
               </div>
             </div>
     
-            <div class="d-flex align-items-center gap-4">
-              <a href="#" class="btn btn-primary d-inline-flex align-items-center gap-2">
-                Learn More
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-              <div class="d-flex align-items-center gap-3">
-                <div class="d-flex">
-                  <img src="https://randomuser.me/api/portraits/men/20.jpg" class="rounded-circle border border-white" width="40" height="40" alt="">
-                  <img src="https://randomuser.me/api/portraits/men/21.jpg" class="rounded-circle border border-white" width="40" height="40" alt="" style="margin-left: -10px;">
-                  <img src="https://randomuser.me/api/portraits/men/22.jpg" class="rounded-circle border border-white" width="40" height="40" alt="" style="margin-left: -10px;">
-                </div>
-                <div>
-                  <div class="fw-bold text-dark">Join Our Team</div>
-                  <small class="text-muted">We're hiring!</small>
-                </div>
-              </div>
+            <button class="btn-53 col-3 border border-1">
+              <div class="original">About Us</div>
+              <a href="" class="text-white  text-decoration-none">
+              <div class="letters">
+                
+              <span>About Us</span>
             </div>
+            </a>
+            </button>
     
           </div>
         </div>
@@ -544,7 +536,7 @@
       <div class="col-md-6 col-lg-3">
         <div class="service-card glass-card p-4 h-100 rounded-4 text-center position-relative transition">
           <div class="icon-box mb-4">
-            <i class="bi bi-cpu fs-1 text-primary"></i>
+            <i class="bi bi-cpu fs-1 col-org"></i>
           </div>
           <h5 class="fw-semibold mb-2">AI Product Solutions</h5>
           <p class="text-muted small">Empower your business with cutting-edge AI-powered tools for productivity and automation.</p>
