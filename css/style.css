@@ -690,40 +690,10 @@ textarea {
 
 
 /* SERIVCE-PAGES CSS */
-.service-card {
-    background-color: #f8f9fa;
-    border: 1px solid var(--border-col);
-    padding: 10px;
-    border-radius: 8px;
-
-    position: relative !important;
-    transition: 0.6s ease-in-out !important;
-    z-index: 1;
+.service-card{
+    border-radius: 45px !important;
 }
 
-.service-card:hover .service-card-hover {
-    width: 100%;
-    background-color: var(--bg-color);
-}
-
-.service-icon {
-
-    background-color: var(--bg-color);
-    color: white;
-
-
-}
-
-.service-title {
-
-    margin-bottom: 10px;
-}
-
-.service-description {
-    font-size: 14px;
-
-    color: var(--para-color);
-}
 
 footer {
     background-size: cover;
@@ -1634,4 +1604,14 @@ swiper-slide img {
 .form_ser>div>div>.iti input {
     border: 1px solid var(--border-col) !important;
     background-color: transparent !important;
+}
+
+.fa-location-arrow{
+    transition: 0.5s ease-in-out !important;
+    color: white;
+}
+.service-card:hover  .fa-location-arrow{
+background-color: var(--bg-color);
+transform:  rotate(50deg);
+
 }
