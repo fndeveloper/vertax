@@ -24,10 +24,6 @@ body {
     font-family: var(--font-family-Jakarta) !important;
 }
 
-.form-select {
-    color: white !important;
-    background-color: #333;
-}
 
 .text-white1 {
 
@@ -565,19 +561,6 @@ textarea {
     color: white !important;
 }
 
-.form-control::placeholder {
-    font-weight: 300 !important;
-    color: rgb(255, 255, 255) !important;
-}
-
-.form-control,
-select,
-textarea {
-    border: none !important;
-    border-radius: 0% !important;
-    border-bottom: 1px solid rgba(211, 211, 211, 0.349) !important;
-    background-color: var(--bg-color) !important;
-}
 
 
 
@@ -1612,15 +1595,7 @@ swiper-slide img {
 
 /* MARQUE SLIDER END */
 
-.form_ser>div>div>.form-control::placeholder {
 
-    color: rgb(27, 27, 27) !important;
-}
-
-.form_ser>div>div>.form-control {
-    border: 1px solid var(--border-col) !important;
-    background-color: transparent !important;
-}
 
 .form_ser>div>div>.iti input {
     border: 1px solid var(--border-col) !important;
@@ -1634,5 +1609,49 @@ swiper-slide img {
 .service-card:hover  .fa-location-arrow{
 background-color: var(--bg-color);
 transform:  rotate(50deg);
+
+}
+
+
+/* ===================CONTACT US ======================== */
+
+
+.contact-card {
+  border-radius: 1rem;
+ 
+  overflow: hidden;
+}
+
+.contact-card .sidebar-box {
+  background-color: #f6f6f6;
+  border-radius: 0.75rem;
+ 
+  margin-bottom: 1rem;
+}
+
+.contact-card .sidebar-link {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+
+.contact-card .sidebar-link:hover {
+  text-decoration: underline;
+}
+
+.contact-card .social-icons a {
+  color: #333;
+  margin-right: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.contact-card .form-check label {
+  font-size: 0.9rem;
+}
+
+
+.contact-card .right-col {
+  background-color: #fdfdfd;
 
 }

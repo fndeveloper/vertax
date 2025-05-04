@@ -2,135 +2,165 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Horizontal Scroll on Vertical Scroll</title>
+  <title>Contact Form</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: Arial, sans-serif;
-      overflow-x: scroll;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9f8;
     }
 
-    .horizontal-sections {
-      display: flex;
-      height: 100vh;
+    .contact-card {
+      border-radius: 1rem;
+      background-color: #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
     }
 
-    .panel {
-      flex: 0 0 100vw;
-      height: 100vh;
-      padding: 2rem;
+    .contact-card .form-control, .form-select {
+      border-radius: 0.5rem;
+    }
+
+    .contact-card .btn-submit {
+      background-color: #1d4d41;
+      color: #fff;
+      border-radius: 2rem;
+      padding: 0.5rem 1.5rem;
+    }
+
+    .contact-card .btn-submit:hover {
+      background-color: #173e35;
+    }
+
+    .contact-card .sidebar-box {
+      background-color: #f6f6f6;
+      border-radius: 0.75rem;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact-card .sidebar-link {
+      text-decoration: none;
+      color: #000;
       display: flex;
-      justify-content: center;
       align-items: center;
-      background-color: #f8f9fa;
     }
 
-    .panel:nth-child(2) {
-      background-color: #e9ecef;
+    .contact-card .sidebar-link:hover {
+      text-decoration: underline;
     }
 
-    .panel:nth-child(3) {
-      background-color: #dee2e6;
+    .contact-card .social-icons a {
+      color: #333;
+      margin-right: 0.75rem;
+      font-size: 1.2rem;
     }
 
-    .card {
-      max-width: 500px;
+    .contact-card .form-check label {
+      font-size: 0.9rem;
     }
 
-    .stat-box {
-      text-align: center;
+   .contact-card  .form-section {
+      padding: 2rem;
     }
 
-    .stat-box h3 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .stat-box p {
-      margin: 0;
-    }
-
-    .spacer {
-      height: 100vh;
+    .contact-card .right-col {
+      background-color: #fdfdfd;
+      padding: 2rem;
     }
   </style>
 </head>
 <body>
 
-  <div class="spacer"></div> <!-- Space before scroll trigger -->
+  <div class="container my-5">
+    <div class="contact-card row">
 
-  <div class="scroll-wrapper">
-    <div class="horizontal-sections">
+      <!-- Left: Form -->
+      <div class="col-lg-8 form-section">
+        <p class="text-uppercase fw-semibold text-muted mb-2">Get in Touch</p>
+        <h2 class="fw-bold mb-4">Here for you, Always</h2>
+        <p class="text-muted mb-4">We're here to assist you with any questions or inquiries.</p>
 
-      <!-- Section 1 -->
-      <div class="panel">
-        <div class="card shadow">
-          <img src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title"><i class="bi bi-check-circle-fill text-primary me-2"></i>Unmatched Expertise</h5>
-            <p class="card-text">Our team brings decades of combined experience and cutting-edge knowledge to every project.</p>
+        <form>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Name">
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Phone">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Company">
+            </div>
+            <div class="col-12">
+              <select class="form-select">
+                <option selected>Discuss About</option>
+                <option value="1">Research and analysis</option>
+                <option value="2">Consulting</option>
+                <option value="3">Technical Support</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <textarea rows="4" class="form-control" placeholder="Your message goes here..."></textarea>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="termsCheck">
+                <label class="form-check-label" for="termsCheck">
+                  I Agree To The Terms, Conditions And Privacy Policy.
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-submit">Send Message</button>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
 
-      <!-- Section 2 -->
-      <div class="panel">
-        <div class="card shadow">
-          <img src="https://images.pexels.com/photos/1181395/pexels-photo-1181395.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title"><i class="bi bi-check-circle-fill text-primary me-2"></i>Innovative Solutions</h5>
-            <p class="card-text">We don't just follow trends—we set them. Stay ahead of the competition with us.</p>
+      <!-- Right: Sidebar -->
+      <div class="col-lg-4 right-col">
+        <div class="sidebar-box bg-success text-white mb-4">
+          <p class="fw-semibold mb-1">Providing Clear Solutions to Common Queries.</p>
+          <p class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Answers To 100+ Questions.</p>
+          <a href="#" class="btn btn-light btn-sm">→ Explore FAQ's</a>
+        </div>
+
+        <div class="sidebar-box">
+          <p class="mb-1 fw-bold">📞 Phone</p>
+          <p class="text-muted mb-0">+1800900122</p>
+        </div>
+
+        <div class="sidebar-box">
+          <p class="mb-1 fw-bold">📧 Mail Id</p>
+          <p class="text-muted mb-0">getsupport@coreit.com</p>
+        </div>
+
+        <div class="sidebar-box">
+          <p class="mb-1 fw-bold">📍 Location</p>
+          <p class="text-muted mb-0">55 Main Street, 2nd Blok,<br>3rd Floor, New York City</p>
+        </div>
+
+        <div class="mt-4">
+          <p class="fw-bold">Social Connect</p>
+          <div class="social-icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
-      </div>
 
-      <!-- Section 3 with Stats -->
-      <div class="panel">
-        <div class="stat-box">
-          <h3>10+</h3>
-          <p class="text-muted">Years Experience</p>
-          <h3>200+</h3>
-          <p class="text-muted">Projects Completed</p>
-          <h3>95%</h3>
-          <p class="text-muted">Client Satisfaction</p>
-          <h3>24/7</h3>
-          <p class="text-muted">Support Available</p>
-        </div>
       </div>
 
     </div>
   </div>
 
-  <div class="spacer"></div> <!-- Space after scroll -->
-
-  <!-- GSAP Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script>
-    gsap.registerPlugin(ScrollTrigger);
-
-    let container = document.querySelector('.horizontal-sections');
-    let panels = gsap.utils.toArray('.panel');
-
-    gsap.to(container, {
-      xPercent: -100 * (panels.length - 1),
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".scroll-wrapper",
-        start: "top top",
-        end: () => "+=" + container.offsetWidth,
-        pin: true,
-        scrub: 1
-      }
-    });
-  </script>
 </body>
 </html>
