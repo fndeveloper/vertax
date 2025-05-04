@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Maven+Pro:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Exo:ital,wght@0,100..900;1,100..900&family=Maven+Pro:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 @font-face {
     font-family: dogwood;
@@ -6,8 +11,13 @@
 }
 
 :root {
+    --font-family-Exo: "Exo", sans-serif;
+    --font-family-Maven: "Maven Pro", sans-serif;
+    --font-family-Ubuntu: "Ubuntu", sans-serif;
+    --font-family-Montserrat: "Montserrat", sans-serif;
     --font-family-Jakarta: "Sansation", sans-serif;
     --font-family-kanit: "Kanit", serif;
+    --font-family-Dosis: "Dosis", sans-serif;
     --color1: #19335a;
     --para-color: #545454;
     --border-col: #1818182f;
@@ -21,7 +31,7 @@ body {
     margin: 0% !important;
     padding: 0% !important;
     background-color: #811f1000 !important;
-    font-family: var(--font-family-Jakarta) !important;
+    font-family: var(--font-family-Exo) !important;
 }
 
 
@@ -1065,20 +1075,9 @@ width: 90vw !important;
     width: 100% !important;
 }
 
-.social-icons {
-    padding: 10px;
-    left: 0%;
-    background-color: var(--color1);
-    background-color: #2b2a2a;
-}
 
-.social-icons>div>a>i {
-    padding: 10px;
-    font-size: 20px;
-    color: white !important;
-    border-radius: 12%;
-    background-color: var(--color1);
-}
+
+
 
 .offcanvas-end {
     transition: 0.8s ease-in-out !important;
@@ -1640,11 +1639,7 @@ transform:  rotate(50deg);
   text-decoration: underline;
 }
 
-.contact-card .social-icons a {
-  color: #333;
-  margin-right: 0.75rem;
-  font-size: 1.2rem;
-}
+
 
 .contact-card .form-check label {
   font-size: 0.9rem;
