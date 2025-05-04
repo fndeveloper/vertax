@@ -994,6 +994,8 @@ position: relative !important;
     transition: 0.1s ease-in-out !important;
 width: 90vw !important;
 }
+
+
 .dropdown-submenu .btn{
     padding: 0px 4px !important;
     text-align: left !important;
@@ -1003,6 +1005,26 @@ width: 90vw !important;
     color: #9c9c9c !important;
 
 
+}
+.position_sticky {
+    position: sticky;
+    left: 0;
+    top: 10% !important;
+    height: max-content !important ;
+}
+.dfd >div{
+    padding: 10px;
+    border-radius: 20px;
+    border: 0.5px solid #19335a33;
+}
+.dd {
+    position: sticky !important;
+    top: 0%;
+    height: max-content !important;
+    display: inline-block; /* والد عنصر کی چوڑائی مواد کے مطابق ہوگی */
+}
+.dd img{
+    height: 70vh !important; 
 }
 
 .who1 {
