@@ -1012,6 +1012,11 @@ width: 90vw !important;
     top: 20% !important;
     height: max-content !important ;
 }
+@media (max-width:992px) {
+    .position_sticky {
+        height: auto !important;
+    }
+}
 .dfd >div{
     padding: 10px;
     border-radius: 20px;
