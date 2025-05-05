@@ -80,7 +80,7 @@ body {
 
 .topoff .nav-item .nav-link {
     text-transform: capitalize;
-    color: white !important;
+    color: var(--bg-color)!important;
     font-weight: 600;
     font-size: 22px !important;
 }
@@ -268,11 +268,7 @@ iframe {
 }
 
 /* NAV-HOVER */
-.nav-item>a {
-    font-weight: 500;
-    /* font-size: 34px !important; */
-    color: var(--para-color);
-}
+
 
 .bg {
     background-color: var(--color1) !important;
@@ -680,11 +676,7 @@ textarea {
 }
 
 .offcanvas-top1 {
-    position: fixed !important;
-    right: 0% !important;
-    background-color: var(--bg-color) !important;
-    transition: 1.2s ease-in-out !important;
-    height: 100vh !important;
+   height: 100vh !important;
     width: 85% !important;
     animation: top 0.1s linear !important;
 
@@ -1016,13 +1008,13 @@ footer {
 
 }
 
-.dropdown {
+.large_nav .dropdown {
     transition: 0.5s ease-in-out !important;
 position: relative !important;
 
 }
 
-.navbar .dropdown-menu {
+.large_nav .dropdown-menu {
 
     margin: 0% 5% !important;
     left: 0% !important;
@@ -1330,9 +1322,7 @@ display: none !important;
     transition: 0.5s ease-in-out;
 }
 
-.offcanvas-body .nav-item>.nav-link {
-    color: white !important;
-}
+
 
 /* Position the Child Dropdown */
 .navbar .dropdown-submenu {
@@ -1345,7 +1335,9 @@ display: none !important;
     background-color: var(--color1) !important;
     color: white !important;
 }
-
+.large_nav .dropdown-menu{
+    display: block;
+}
 
 .off_canvas_nav .dropdown-menu {
     background-color: red;
