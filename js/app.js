@@ -15,20 +15,27 @@ window.addEventListener("scroll", function () {
   var navbar = document.getElementById("navbar");
   var navbar1 = document.getElementById("navbar1");
   var iconf = document.querySelectorAll(".btn-red");
-
+  const logo = document.querySelector(".logo_nb"); 
 
   var navlinkd = this.document.querySelectorAll(".nav-item>.nav-link")
 
+ 
   if (window.scrollY > 700) {
-    
-      navbar.classList.add("navfix");
-   iconf.forEach((e) => {
-      e.classList.add("icon-fixeds")
-    })
+    navbar.classList.add("navfix");
+
+    iconf.forEach((e) => {
+      e.classList.add("icon-fixeds");
+    });
+
+    logo.classList.add("logo_nb_col");
+   
     navlinkd.forEach((e) => {
-      e.classList.add("nav-sec-col")
-    })
-  } else {
+      e.classList.add("nav-sec-col");
+    });
+  } 
+   else {
+    logo.classList.remove("logo_nb_col"); 
+    logo.classList.add("text_white"); 
 
     iconf.forEach((e) => {
       e.classList.remove("icon-fixeds")
