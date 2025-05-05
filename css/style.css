@@ -1339,10 +1339,6 @@ display: none !important;
     display: block;
 }
 
-.off_canvas_nav .dropdown-menu {
-    background-color: red;
-    position: absolute;
-}
 
 .navbar .dropdown-submenu:hover .child-dropdown {
     /* display: block; */
