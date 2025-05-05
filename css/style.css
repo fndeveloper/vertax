@@ -72,11 +72,7 @@ body {
     font-weight: 600 !important;
 }
 
-@media (max-width:356px) {
-    .head-1 {
-        font-size: 24px !important;
-    }
-}
+
 
 .topoff .nav-item .nav-link {
     text-transform: capitalize;
