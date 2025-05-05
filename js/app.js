@@ -1,3 +1,17 @@
+// ========================== HEADER FETCH START ======================================
+var header=document.getElementById("header")
+
+fetch("header.html")
+.then(e => e.text())
+.then((e)=>{
+ 
+  header.innerHTML=`
+  ${e}
+  `
+  
+})
+
+// ========================== HEADER FETCH END ======================================
 
 
 window.addEventListener("scroll", function () {
@@ -106,25 +120,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 // SWIPER HOME JS 
 
-document.addEventListener("DOMContentLoaded", () => {
-//  SERVICE NAVBAR START
-  let serviceNavLink = document.getElementById("service_nav_link");
-
-  serviceNavLink.addEventListener("click", () => {
-      let offcanvasMain = new bootstrap.Offcanvas(document.getElementById("offcanvasMain"));
-      let offcanvasService = new bootstrap.Offcanvas(document.getElementById("offcanvasService"));
-
-      offcanvasMain.hide();
-      offcanvasService.show();
-  });
-//  SERVICE NAVBAR END
-//  AI SERVICE NAVBAR START
-//  AI SERVICE NAVBAR START
-
-
-
-});
-
+\
 
 
 
