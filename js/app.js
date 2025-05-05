@@ -27,15 +27,12 @@ window.addEventListener("scroll", function () {
       e.classList.add("icon-fixeds");
     });
 
-    logo.classList.add("logo_nb_col");
    
     navlinkd.forEach((e) => {
       e.classList.add("nav-sec-col");
     });
   } 
    else {
-    logo.classList.remove("logo_nb_col"); 
-    logo.classList.add("text_white"); 
 
     iconf.forEach((e) => {
       e.classList.remove("icon-fixeds")
