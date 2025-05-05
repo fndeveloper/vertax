@@ -2,165 +2,124 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact Form</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <title>Testimonial Slider</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f8f9f8;
-    }
-
-    .contact-card {
-      border-radius: 1rem;
-      background-color: #fff;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-      overflow: hidden;
-    }
-
-    .contact-card .form-control, .form-select {
-      border-radius: 0.5rem;
-    }
-
-    .contact-card .btn-submit {
-      background-color: #1d4d41;
-      color: #fff;
-      border-radius: 2rem;
-      padding: 0.5rem 1.5rem;
-    }
-
-    .contact-card .btn-submit:hover {
-      background-color: #173e35;
-    }
-
-    .contact-card .sidebar-box {
-      background-color: #f6f6f6;
-      border-radius: 0.75rem;
-      padding: 1rem;
-      margin-bottom: 1rem;
-    }
-
-    .contact-card .sidebar-link {
-      text-decoration: none;
-      color: #000;
-      display: flex;
-      align-items: center;
-    }
-
-    .contact-card .sidebar-link:hover {
-      text-decoration: underline;
-    }
-
-    .contact-card .social-icons a {
-      color: #333;
-      margin-right: 0.75rem;
-      font-size: 1.2rem;
-    }
-
-    .contact-card .form-check label {
-      font-size: 0.9rem;
-    }
-
-   .contact-card  .form-section {
+    .testimonial-box {
+      background-color: #f8f9fa;
       padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
     }
-
-    .contact-card .right-col {
-      background-color: #fdfdfd;
-      padding: 2rem;
+    .testimonial-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .star {
+      color: #ffc107;
+      font-size: 1rem;
     }
   </style>
 </head>
 <body>
 
-  <div class="container my-5">
-    <div class="contact-card row">
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h5 class="text-secondary">Why Choose Us</h5>
+      <h2 class="fw-bold">Words from our satisfied clients</h2>
+    </div>
 
-      <!-- Left: Form -->
-      <div class="col-lg-8 form-section">
-        <p class="text-uppercase fw-semibold text-muted mb-2">Get in Touch</p>
-        <h2 class="fw-bold mb-4">Here for you, Always</h2>
-        <p class="text-muted mb-4">We're here to assist you with any questions or inquiries.</p>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
 
-        <form>
-          <div class="row g-3">
-            <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Name">
+        <!-- Testimonial Slide 1 -->
+        <div class="swiper-slide">
+          <div class="testimonial-box text-center">
+            <div class="mb-3">
+              <div class="star">★ ★ ★ ★ ☆</div>
             </div>
-            <div class="col-md-6">
-              <input type="email" class="form-control" placeholder="Email">
-            </div>
-            <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Phone">
-            </div>
-            <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Company">
-            </div>
-            <div class="col-12">
-              <select class="form-select">
-                <option selected>Discuss About</option>
-                <option value="1">Research and analysis</option>
-                <option value="2">Consulting</option>
-                <option value="3">Technical Support</option>
-              </select>
-            </div>
-            <div class="col-12">
-              <textarea rows="4" class="form-control" placeholder="Your message goes here..."></textarea>
-            </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="termsCheck">
-                <label class="form-check-label" for="termsCheck">
-                  I Agree To The Terms, Conditions And Privacy Policy.
-                </label>
+            <p class="mb-4">"On the other hand denounce righteous indignation and dislike men who beguile and demoralize..."</p>
+            <div class="d-flex justify-content-center align-items-center gap-3">
+              <img src="https://coreit.themepanthers.com/demo/wp-content/uploads/2025/01/footer-img.jpg" alt="Client" class="testimonial-img">
+              <div class="text-start">
+                <h6 class="mb-0">Boris Elbert</h6>
+                <small class="text-muted">Green Tech</small>
               </div>
             </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-submit">Send Message</button>
+          </div>
+        </div>
+
+        <!-- Testimonial Slide 2 -->
+        <div class="swiper-slide">
+          <div class="testimonial-box text-center">
+            <div class="mb-3">
+              <div class="star">★ ★ ★ ★ ★</div>
+            </div>
+            <p class="mb-4">"Pleasure the moment blinded desire cannot foresee pain and trouble that are bound to ensue..."</p>
+            <div class="d-flex justify-content-center align-items-center gap-3">
+              <img src="https://coreit.themepanthers.com/demo/wp-content/uploads/2025/01/testi-2.jpg" alt="Client" class="testimonial-img">
+              <div class="text-start">
+                <h6 class="mb-0">Ivor Herbert</h6>
+                <small class="text-muted">Manager, Airlines</small>
+              </div>
             </div>
           </div>
-        </form>
-      </div>
-
-      <!-- Right: Sidebar -->
-      <div class="col-lg-4 right-col">
-        <div class="sidebar-box bg-success text-white mb-4">
-          <p class="fw-semibold mb-1">Providing Clear Solutions to Common Queries.</p>
-          <p class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Answers To 100+ Questions.</p>
-          <a href="#" class="btn btn-light btn-sm">→ Explore FAQ's</a>
         </div>
 
-        <div class="sidebar-box">
-          <p class="mb-1 fw-bold">📞 Phone</p>
-          <p class="text-muted mb-0">+1800900122</p>
-        </div>
-
-        <div class="sidebar-box">
-          <p class="mb-1 fw-bold">📧 Mail Id</p>
-          <p class="text-muted mb-0">getsupport@coreit.com</p>
-        </div>
-
-        <div class="sidebar-box">
-          <p class="mb-1 fw-bold">📍 Location</p>
-          <p class="text-muted mb-0">55 Main Street, 2nd Blok,<br>3rd Floor, New York City</p>
-        </div>
-
-        <div class="mt-4">
-          <p class="fw-bold">Social Connect</p>
-          <div class="social-icons">
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-twitter-x"></i></a>
-            <a href="#"><i class="bi bi-youtube"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
+        <!-- Testimonial Slide 3 -->
+        <div class="swiper-slide">
+          <div class="testimonial-box text-center">
+            <div class="mb-3">
+              <div class="star">★ ★ ★ ★ ★</div>
+            </div>
+            <p class="mb-4">"Denounce righteous indignation and dislike men who beguile and demoralize by charms of pleasure..."</p>
+            <div class="d-flex justify-content-center align-items-center gap-3">
+              <img src="https://coreit.themepanthers.com/demo/wp-content/uploads/2025/01/testi-3.jpg" alt="Client" class="testimonial-img">
+              <div class="text-start">
+                <h6 class="mb-0">Somalia D. Silva</h6>
+                <small class="text-muted">Business Manager</small>
+              </div>
+            </div>
           </div>
         </div>
 
+      </div>
+
+      <!-- Arrows -->
+      <div class="d-flex justify-content-between mt-4">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
 
     </div>
   </div>
+</section>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+  new Swiper(".mySwiper", {
+    loop: true,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 4000,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      768: { slidesPerView: 1 },
+      1200: { slidesPerView: 1 },
+    },
+  });
+</script>
 
 </body>
 </html>
