@@ -286,10 +286,14 @@ iframe {
     border: 1px solid var(--color1);
     color: var(--color1);
     padding: 6px 10px;
+    font-size: 18px !important;
     background-color: transparent;
-
+transition: 0.5s ease-in-out !important;
 }
-
+.btn-red:hover{
+background-color: var(--bg-color);
+color: white;
+}
 @media (max-width:992px) {
     .btn-red {
 
@@ -297,9 +301,44 @@ iframe {
         border-radius: 10% !important;
     }
 }
+.modal_info{
+    margin:0% 5% !important;
+   transition: 0.5s ease-in-out ;
+    top: 15% !important;
+    overflow: hidden !important;
+    transition: 0.5s ease-in-out !important;
 
+   }
+.modal_info_image{
+    height: 75vh !important;
+  border-radius: 20px !important;
+
+}
+.modal_content_info{
+    transition: 0.5s ease-in-out !important;
+    overflow: hidden !important;
+    background-color:rgb(255, 255, 255)!important;
+  z-index: 1111111111 !important;
+  border-radius: 20px !important;
+    width: 89vw !important;
+    height: 83% !important;
+    /* margin: 0% 5% !important; */
+   }
 .arr {
     fill: var(--color1) !important;
+}
+.btn_moda_ifno{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    background-color: var(--color1) !important;
+    color: white;
+}
+
+.rounded_4{
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+
 }
 
 .image-1 {
