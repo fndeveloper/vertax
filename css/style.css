@@ -1075,7 +1075,7 @@ display: none !important;
 }
 
 
-.large-navbar .dropdown:hover .dropdown-menu {
+.large_nav  .dropdown:hover .dropdown-menu {
 
     display: flex  !important;
     padding-bottom: 30px; 
