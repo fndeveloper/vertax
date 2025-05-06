@@ -30,7 +30,7 @@
 body {
     overflow-x: hidden;
     box-sizing: border-box !important;
-    margin: 0% !important;
+    margin: 0% 1% !important;
     padding: 0% !important;
     background-color: #811f1000 !important;
     font-family: var(--font-family-Exo) !important;
@@ -153,7 +153,6 @@ margin: 4px 0px;
     position: absolute !important;
     width:98% !important;
     top: 2%;
-    margin: 0% 1% !important;
     border-radius: 30px !important;
     padding: 0%;
     background-color: transparent !important;
@@ -162,6 +161,8 @@ margin: 4px 0px;
   backdrop-filter: blur(20px);
     z-index: 1111 !important;
     transition: 0.4s ease-in-out !important;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
 }
 
 .nav-item>a {
@@ -1374,18 +1375,20 @@ display: none !important;
     width: 100%;
     position: relative;
     top: 0% !important;
-
-
-    height: 110vh !important;
+border-radius: 30px;
+   
+    height: 100vh !important;
 }
 
 .banner-img_new {
+border-radius: 30px;
+
     margin: 0px !important;
     padding: 0px !important;
-    width: 100%;
+    width:96% !important;
     height: 100vh !important;
     z-index: -1;
-top: -3% !important;
+top: 10% !important;
     object-fit: cover;
     background-position: center;
     background-size: cover;
