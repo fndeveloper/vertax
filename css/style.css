@@ -11,7 +11,7 @@
 }
 
 :root {
-    --font-family-Exo: "Exo", sans-serif;
+    --font-family-Exo: "Montserrat", sans-serif;
     --font-family-Maven: "Maven Pro", sans-serif;
     --font-family-Ubuntu: "Ubuntu", sans-serif;
     --font-family-Montserrat: "Montserrat", sans-serif;
@@ -1379,7 +1379,7 @@ display: none !important;
     position: relative;
     top: 0% !important;
 border-radius: 30px;
-    height: 100vh !important;
+    height: 98.5vh !important;
     /* background-color: rgba(7, 5, 5, 0.402) !important; */
 }
 
