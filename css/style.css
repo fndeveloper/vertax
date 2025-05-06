@@ -650,7 +650,7 @@ textarea {
 
 .navfix {
     position: fixed !important;
-    top: 1% !important;
+    top: 0.9% !important;
     transition: 0.4s ease-in-out !important;
     background-color: rgb(255, 255, 255) !important;
     backdrop-filter: blur(130px) !important;
