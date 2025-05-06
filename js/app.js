@@ -17,7 +17,7 @@ fetch("header.html")
 window.addEventListener("scroll", function () {
   var navunder = document.getElementById("navunder");
   const scrollableHeight = document.body.scrollHeight - window.innerHeight;
-  const scrollProgress = (window.scrollY / scrollableHeight) * 98;
+  const scrollProgress = (window.scrollY / scrollableHeight) * 93;
   if (scrollProgress > 95) {
     document.getElementById("topbtn").innerHTML = `<i class="fa-solid fa-arrow-up"></i>`;
 }
