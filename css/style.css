@@ -1386,12 +1386,21 @@ display: none !important;
 }
 
 .home_new {
-    width: 99%;
+    width: 98%;
     position: relative;
     top: 0% !important;
 border-radius: 30px;
     height: 98.5vh !important;
     /* background-color: rgba(7, 5, 5, 0.402) !important; */
+}
+@media (max-width:576px) {
+    .home_new{
+        height: 80vh !important;
+    }
+    .banner-img_new {
+        width: 80%;
+        background-position:left !important;
+    }
 }
 
 .banner-img_new {
@@ -1404,9 +1413,8 @@ margin: 0% 2% !important;
     height: 100% !important;
     z-index: -1;
 top: -2% !important;
-    object-fit: cover;
-    background-position: center;
-    background-size: cover;
+    /* object-fit: cover; */
+    /* background-size: contain; */
     background-color: rgba(0, 0, 0, 0.402) !important;
 
 }
