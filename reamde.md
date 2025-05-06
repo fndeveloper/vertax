@@ -8,7 +8,7 @@
 </a>
 </button>
 
-  <div class="text-center mb-5">
-    <h2 class="display-4 fw-bold text-dark">Why Chose Us</h2>
-    <p class="text-secondary fs-5">Delivering scalable, intelligent, and custom digital solutions for businesses worldwide.</p>
-  </div>
+ <div class="">
+            <h6 class="  under_line  px-3 ">About Us <i class="ms-2 fa-solid fa-caret-right  text-white px-2 py-1 rounded-circle bg_light "></i></h6>
+         
+           </div>

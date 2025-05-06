@@ -120,26 +120,83 @@ var swiper = new Swiper(".mySwiper", {
 });
 // SWIPER HOME JS 
 
-
+// ====================== LOADER START ======================
 document.addEventListener("DOMContentLoaded", () => {
-  // Disable scrolling initially
-  // document.body.style.overflow = "hidden";
+
 
   const load = document.getElementById("loader");
 
-  // Prepare for transition
   load.style.transition = "opacity 0.9s ease, top 0.6s ease";
 
   setTimeout(() => {
-    // Start fade-out
     load.style.opacity = "0";
-
-    // After fade, move it out of view (slide up)
     setTimeout(() => {
       load.style.top = "-100%";
 
-      // Finally, enable scrolling
-      // document.body.style.overflow = "auto";
-    }, 600); // wait for opacity transition to finish
-  }, 900); // loader wait time before fade
+    }, 600);  
+  }, 900); 
 });
+
+// ====================== LOADER END ==========================
+
+// ===================== CHART JS START =================================
+const ctx = document.getElementById("myChart").getContext("2d");
+
+new Chart(ctx, {
+  type: "bar",
+  data: {
+    labels: ["2000", "2005", "2010", "2015", "2020", "2025"],
+
+    datasets: [
+      {
+        label: "Data",
+        data: [10, 20,5 , 9, 19, 18, 17],
+        backgroundColor: "#002b22", // Light green
+        borderRadius: 10,
+        barPercentage: 0.2,
+      },
+    ],
+  },
+  options: {
+    plugins: {
+      legend: {
+        display: false,
+      },
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+        grid: {
+          color: "#cccccc2a ",          // Light grid lines
+          borderColor: "#cccccc2a "     // Not needed, just clarifying
+        },
+        border: {
+          display: false          // ❌ Hides Y-axis border
+        },
+        ticks: {
+          color: "#cccccc2a ",          // Optional: Label color
+          font: {
+            size: 1
+          }
+        }
+      },
+      x: {
+        grid: {
+          color: "#cccccc2a ",          // Light horizontal grid lines
+        },
+        border: {
+          display: false          // ❌ Hides X-axis border
+        },
+        ticks: {
+          color: "#666",
+          font: {
+            size: 13
+          }
+        }
+      }
+    }
+    
+  }
+  
+});
+// ===================== CHARTS JS END ====================
