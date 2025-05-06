@@ -37,7 +37,7 @@ body {
     font-family: var(--font-family-Exo) !important;
 }
 
-/* #loader {
+#loader {
     position: fixed;
     top: 0;
     left: 0;
@@ -47,7 +47,7 @@ body {
     z-index: 9999;
     backdrop-filter: blur(7px);
     transition: opacity 0.9s ease, top 0.6s ease;
-  } */
+  }
   .under_line{
     background-color: #002b2211;
     text-transform: uppercase !important;
