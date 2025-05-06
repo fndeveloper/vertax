@@ -121,7 +121,25 @@ var swiper = new Swiper(".mySwiper", {
 // SWIPER HOME JS 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  // Disable scrolling initially
+  // document.body.style.overflow = "hidden";
 
+  const load = document.getElementById("loader");
 
+  // Prepare for transition
+  load.style.transition = "opacity 0.9s ease, top 0.6s ease";
 
+  setTimeout(() => {
+    // Start fade-out
+    load.style.opacity = "0";
 
+    // After fade, move it out of view (slide up)
+    setTimeout(() => {
+      load.style.top = "-100%";
+
+      // Finally, enable scrolling
+      // document.body.style.overflow = "auto";
+    }, 600); // wait for opacity transition to finish
+  }, 900); // loader wait time before fade
+});
