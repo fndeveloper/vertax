@@ -30,7 +30,7 @@
 body {
     overflow-x: hidden;
     box-sizing: border-box !important;
-    margin: 0% 1% !important;
+    margin: 0% 0% !important;
     padding: 0% !important;
     background-color: #811f1000 !important;
     font-family: var(--font-family-Exo) !important;
@@ -153,7 +153,9 @@ margin: 4px 0px;
     position: absolute !important;
     width:98% !important;
     top: 2%;
-    border-radius: 30px !important;
+margin: 0% 1% !important;
+
+    border-radius: 25px !important;
     padding: 0%;
     background-color: transparent !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.247) !important;
@@ -201,8 +203,9 @@ iframe {
     object-fit: cover;
     background-position: center;
     background-size: cover;
-    background-color: black !important;
-    top: 0%;
+    top: -2%;
+    border-radius: 20px;
+    position: absolute;
 }
 
 .main1 {
@@ -1372,26 +1375,28 @@ display: none !important;
 }
 
 .home_new {
-    width: 100%;
+    width: 99%;
     position: relative;
     top: 0% !important;
 border-radius: 30px;
-   
     height: 100vh !important;
+    /* background-color: rgba(7, 5, 5, 0.402) !important; */
 }
 
 .banner-img_new {
 border-radius: 30px;
 
-    margin: 0px !important;
+margin: 0% 2% !important;
+
     padding: 0px !important;
-    width:96% !important;
-    height: 100vh !important;
+    width:99% !important;
+    height: 100% !important;
     z-index: -1;
-top: 10% !important;
+top: -2% !important;
     object-fit: cover;
     background-position: center;
     background-size: cover;
+    background-color: rgba(0, 0, 0, 0.402) !important;
 
 }
 
@@ -1405,15 +1410,17 @@ img {
 }
 
 .home {
-    margin: 0px !important;
+    position: relative;
+    /* margin: 0% 1% !important; */
     padding: 0px !important;
-    height: 90vh;
-    background-color: rgba(0, 0, 0, 0.402);
+    height: 100vh;
+    /* background-color: rgba(0, 0, 0, 0.402); */
     /* background-position: right top; */
     background-size: cover;
     object-fit: cover;
+    top: -5% !important;
     position: relative;
-    width: 100% !important;
+    width: 99.5% !important;
 
 }
 
