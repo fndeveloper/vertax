@@ -1396,11 +1396,16 @@ border-radius: 30px;
 @media (max-width:576px) {
     .home_new{
         height: 80vh !important;
+    width: 99% !important;
     }
     .banner-img_new {
         width: 80%;
         background-position:left !important;
     }
+.large_nav {
+width: 96% !important;
+margin: 0% 2% !important;
+}
 }
 
 .banner-img_new {
