@@ -34,7 +34,7 @@ window.addEventListener("scroll", function () {
   var navlinkd = this.document.querySelectorAll(".nav-item>.nav-link")
 
  
-  if (window.scrollY > 700) {
+  if (window.scrollY > 550) {
     navbar.classList.add("navfix");
 
     iconf.forEach((e) => {
