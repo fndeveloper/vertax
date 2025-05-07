@@ -1081,10 +1081,12 @@ footer {
 .large_nav .dropdown {
     transition: 0.5s ease-in-out !important;
 position: relative !important;
+z-index: 111111 !important;
 
 }
 
 .large_nav .dropdown-menu {
+    z-index: 934222 !important;
    padding: 10px !important;
     margin: 0% 8% !important;
     left: 0% !important;
@@ -1151,10 +1153,9 @@ display: none !important;
     color: white !important;
 }
 
-
 .large_nav  .dropdown:hover .dropdown-menu {
-z-index: 21111 !important;
-    display: flex  !important;
+z-index: 2111111 !important;
+    display: inline-block  !important;
     padding-bottom: 30px; 
 }
 
@@ -1431,10 +1432,7 @@ z-index: 21111 !important;
     transition: 0.6s ease-in-out !important;
 
 }
-.dropdown i{
-    color:var(--color1);
-    font-size: 12px !important;
-}
+
 /* CHILD DROPDOWN CSS END */
 
 
