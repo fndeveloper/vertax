@@ -29,9 +29,7 @@
 
 body {
     background-color: rgb(255, 255, 255) !important;
-
-    /* overflow: hidden !important; */
-    box-sizing: border-box !important;
+ box-sizing: border-box !important;
     margin: 0% 0% !important;
     padding: 0% !important;
     font-family: var(--font-family-Exo) !important;
@@ -51,17 +49,34 @@ body {
   .main_card img{
     background-size: cover;
     object-fit: cover;
-    height: 350px !important;
-
+    height: 50vh !important;
+transition: 0.5s ease-in-out !important;
   }
-  .glass-card{
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+  .glass-card {
+    transition: 0.5s ease-in-out !important;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     position: absolute !important;
-    bottom: 30% !important;
-    background-color: rgb(255, 255, 255);
-    backdrop-filter: blur(6px);
-    color: var(--bg-color) !important;
-    border-radius: 40px !important;
+    bottom: -25% !important;
+    background-color: rgb(255, 255, 255) !important;
+    border: 1px solid rgba(255, 255, 255, 0.233);
+ color: var(--bg-color) !important;
+    
+    border-radius: 20px !important;
+  }
+ 
+  @media (max-width:992px) {
+  .glass-card{
+    position: static !important;
+      bottom: 0% !important; 
+      margin: 0% 0% !important ;
+      color: var(--bg-color) !important;
+  }
+  }
+  @media (max-width:576px) {
+    .responsive-font{
+        font-size: 15px !important;
+    }
   }
   .under_line{
     background-color: #002b2211;
@@ -664,6 +679,7 @@ textarea {
 
 
 .navfix {
+z-index: 911111 !important;
     position: fixed !important;
     top: 0.9% !important;
     transition: 0.4s ease-in-out !important;
@@ -1137,7 +1153,7 @@ display: none !important;
 
 
 .large_nav  .dropdown:hover .dropdown-menu {
-
+z-index: 21111 !important;
     display: flex  !important;
     padding-bottom: 30px; 
 }
@@ -1398,6 +1414,7 @@ display: none !important;
 }
 .large_nav .dropdown-menu{
     display: block;
+    z-index: 21111 !important;
 }
 
 
@@ -1706,12 +1723,13 @@ swiper-slide img {
 }
 
 .fa-location-arrow{
-    background-color: var(--color1);
+    background-color: white ;
+    /* background-color: var(--color1); */
     transition: 0.5s ease-in-out !important;
-    color: white;
-}
+    color: rgb(75, 81, 87)}
 .service-card:hover  .fa-location-arrow{
-background-color: var(--bg-color);
+background-color: lightslategrey;
+background-color: white;
 transform:  rotate(50deg);
 
 }
