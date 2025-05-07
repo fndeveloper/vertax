@@ -48,6 +48,21 @@ body {
     backdrop-filter: blur(7px);
     transition: opacity 0.9s ease, top 0.6s ease;
   }
+  .main_card img{
+    background-size: cover;
+    object-fit: cover;
+    height: 350px !important;
+
+  }
+  .glass-card{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    position: absolute !important;
+    bottom: 30% !important;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(6px);
+    color: var(--bg-color) !important;
+    border-radius: 40px !important;
+  }
   .under_line{
     background-color: #002b2211;
     text-transform: uppercase !important;
@@ -761,9 +776,6 @@ top: 2%;
 
 
 /* SERIVCE-PAGES CSS */
-.service-card{
-    border-radius: 45px !important;
-}
 
 
 footer {
@@ -1694,6 +1706,7 @@ swiper-slide img {
 }
 
 .fa-location-arrow{
+    background-color: var(--color1);
     transition: 0.5s ease-in-out !important;
     color: white;
 }

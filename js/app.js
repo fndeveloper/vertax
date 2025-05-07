@@ -1,15 +1,15 @@
 // ========================== HEADER FETCH START ======================================
-var header=document.getElementById("header")
+var header = document.getElementById("header")
 
 fetch("header.html")
-.then(e => e.text())
-.then((e)=>{
- 
-  header.innerHTML=`
+  .then(e => e.text())
+  .then((e) => {
+
+    header.innerHTML = `
   ${e}
   `
-  
-})
+
+  })
 
 // ========================== HEADER FETCH END ======================================
 
@@ -20,7 +20,7 @@ window.addEventListener("scroll", function () {
   const scrollProgress = (window.scrollY / scrollableHeight) * 93;
   if (scrollProgress > 95) {
     document.getElementById("topbtn").innerHTML = `<i class="fa-solid fa-arrow-up"></i>`;
-}
+  }
   else {
     this.document.getElementById("topbtn").innerHTML = scrollProgress.toFixed(0) + "%";
 
@@ -29,11 +29,11 @@ window.addEventListener("scroll", function () {
   var navbar = document.getElementById("navbar");
   var navbar1 = document.getElementById("navbar1");
   var iconf = document.querySelectorAll(".btn-red");
-  const logo = document.querySelector(".logo_nb"); 
+  const logo = document.querySelector(".logo_nb");
 
   var navlinkd = this.document.querySelectorAll(".nav-item>.nav-link")
 
- 
+
   if (window.scrollY > 550) {
     navbar.classList.add("navfix");
 
@@ -41,12 +41,12 @@ window.addEventListener("scroll", function () {
       e.classList.add("icon-fixeds");
     });
 
-   
+
     navlinkd.forEach((e) => {
       e.classList.add("nav-sec-col");
     });
-  } 
-   else {
+  }
+  else {
 
     iconf.forEach((e) => {
       e.classList.remove("icon-fixeds")
@@ -133,8 +133,8 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
       load.style.top = "-100%";
 
-    }, 600);  
-  }, 900); 
+    }, 0);
+  }, 0);
 });
 
 // ====================== LOADER END ==========================
@@ -150,7 +150,7 @@ new Chart(ctx, {
     datasets: [
       {
         label: "Data",
-        data: [10, 20,5 , 9, 19, 18, 17],
+        data: [10, 20, 5, 9, 19, 18, 17],
         backgroundColor: "#002b22", // Light green
         borderRadius: 10,
         barPercentage: 0.2,
@@ -195,8 +195,8 @@ new Chart(ctx, {
         }
       }
     }
-    
+
   }
-  
+
 });
 // ===================== CHARTS JS END ====================
