@@ -18,7 +18,7 @@
     --font-family-Jakarta: "Sansation", sans-serif;
     --font-family-kanit: "Kanit", serif;
     --font-family-Dosis: "Dosis", sans-serif;
-    --color1: #002b22;
+    --color1: #014637;
     /* --color1: #19335a; */
 
     --para-color: #545454;
@@ -218,16 +218,14 @@ margin: 4px 0px;
     top: 2%;
 margin: 0% 1% !important;
 
-    border-radius: 25px !important;
+    border-radius: 50px !important;
     padding: 0%;
     background-color: transparent !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.247) !important;
     background-color: rgb(255, 255, 255) !important;
   backdrop-filter: blur(20px);
     z-index: 1111 !important;
     transition: 0.4s ease-in-out !important;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
 .nav-item>a {
@@ -691,8 +689,8 @@ z-index: 911111 !important;
     transition: 0.4s ease-in-out !important;
     background-color: rgb(255, 255, 255) !important;
     backdrop-filter: blur(130px) !important;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-}
+   
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;}
 .div_1_blur{
     border: 1px solid rgba(255, 255, 255, 0.075) !important;
     background-color: rgba(233, 233, 233, 0.178) !important;
@@ -1823,7 +1821,7 @@ transform:  rotate(50deg);
 }
 
   .testimonail_div .swiper-pagination-bullet-active {
-background-color: var(--bg-color) !important;
+background-color: var(--color1) !important;
     transition: 0.6s ease-in-out !important;
 
     padding: 10px 20px;
