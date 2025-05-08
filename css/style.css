@@ -1123,6 +1123,8 @@ display: none !important;
 .position_sticky {
     position: sticky;
     left: 0;
+    z-index: 111;
+    background-color: transparent;
     top: 20% !important;
     height: max-content !important ;
 }
@@ -1133,12 +1135,15 @@ display: none !important;
 }
 .dfd >div{
     padding: 10px;
-    border-radius: 20px;
-    border: 0.5px solid #19335a33;
+    border-radius: 15px;
+    border: 0.5px solid #19335a17;
 }
 
 .dd img{
-    height: 70vh !important; 
+    background-color: transparent !important;
+    height: 60vh !important; 
+    border: 0px solid white !important;
+box-shadow: none !important;
 }
 .dd .card-body{
     color: white !important;
