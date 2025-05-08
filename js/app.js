@@ -87,9 +87,95 @@ for (i = 0; i < acc.length; i++) {
 
 // MARQUEE END
 
+
+
+// ====================== LOADER START ======================
+// document.addEventListener("DOMContentLoaded", () => {
+
+
+//   const load = document.getElementById("loader");
+
+//   load.style.transition = "opacity 0.9s ease, top 0.6s ease";
+
+//   setTimeout(() => {
+//     load.style.opacity = "0";
+//     setTimeout(() => {
+//       load.style.top = "-100%";
+
+//     }, 0);
+//   }, 0);
+// });
+
+// ====================== LOADER END ==========================
+
+// ===================== CHART JS START =================================
+
+document.addEventListener("DOMContentLoaded", function () {
+  const canvas = document.getElementById("myChart");
+
+  if (canvas) {
+    // Dynamically load Chart.js only if the canvas exists
+    const chartScript = document.createElement("script");
+    chartScript.src = "https://cdn.jsdelivr.net/npm/chart.js";
+    chartScript.onload = () => {
+      const ctx = canvas.getContext("2d");
+
+      new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: ["2000", "2005", "2010", "2015", "2020", "2025"],
+          datasets: [
+            {
+              label: "Data",
+              data: [10, 20, 5, 9, 19, 18],
+              backgroundColor: "#002b22",
+              borderRadius: 10,
+              barPercentage: 0.2,
+            },
+          ],
+        },
+        options: {
+          plugins: {
+            legend: { display: false },
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              grid: { color: "#cccccc2a" },
+              border: { display: false },
+              ticks: {
+                color: "#cccccc2a",
+                font: { size: 1 },
+              },
+            },
+            x: {
+              grid: { color: "#cccccc2a" },
+              border: { display: false },
+              ticks: {
+                color: "#666",
+                font: { size: 13 },
+              },
+            },
+          },
+        },
+      });
+    };
+
+    chartScript.onerror = () => {
+      console.error("Failed to load Chart.js");
+    };
+
+    document.head.appendChild(chartScript);
+  }
+});
+
+// ===================== CHARTS JS END ====================
+
+
+
 // SWIPER HOME JS 
-// Get elements
-var swiper = new Swiper(".mySwiper", {
+// Get elements{
+  var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
   spaceBetween: 24,
   pagination: {
@@ -113,84 +199,3 @@ var swiper = new Swiper(".mySwiper", {
   }
 });
 // SWIPER HOME JS 
-
-// ====================== LOADER START ======================
-document.addEventListener("DOMContentLoaded", () => {
-
-
-  const load = document.getElementById("loader");
-
-  load.style.transition = "opacity 0.9s ease, top 0.6s ease";
-
-  setTimeout(() => {
-    load.style.opacity = "0";
-    setTimeout(() => {
-      load.style.top = "-100%";
-
-    }, 0);
-  }, 0);
-});
-
-// ====================== LOADER END ==========================
-
-// ===================== CHART JS START =================================
-const ctx = document.getElementById("myChart").getContext("2d");
-
-new Chart(ctx, {
-  type: "bar",
-  data: {
-    labels: ["2000", "2005", "2010", "2015", "2020", "2025"],
-
-    datasets: [
-      {
-        label: "Data",
-        data: [10, 20, 5, 9, 19, 18, 17],
-        backgroundColor: "#002b22", // Light green
-        borderRadius: 10,
-        barPercentage: 0.2,
-      },
-    ],
-  },
-  options: {
-    plugins: {
-      legend: {
-        display: false,
-      },
-    },
-    scales: {
-      y: {
-        beginAtZero: true,
-        grid: {
-          color: "#cccccc2a ",          // Light grid lines
-          borderColor: "#cccccc2a "     // Not needed, just clarifying
-        },
-        border: {
-          display: false          // ❌ Hides Y-axis border
-        },
-        ticks: {
-          color: "#cccccc2a ",          // Optional: Label color
-          font: {
-            size: 1
-          }
-        }
-      },
-      x: {
-        grid: {
-          color: "#cccccc2a ",          // Light horizontal grid lines
-        },
-        border: {
-          display: false          // ❌ Hides X-axis border
-        },
-        ticks: {
-          color: "#666",
-          font: {
-            size: 13
-          }
-        }
-      }
-    }
-
-  }
-
-});
-// ===================== CHARTS JS END ====================
