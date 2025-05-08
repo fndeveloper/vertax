@@ -49,7 +49,7 @@ body {
   .main_card img{
     background-size: cover;
     object-fit: cover;
-    height: 50vh !important;
+    height: 60vh !important;
 transition: 0.5s ease-in-out !important;
   }
 
@@ -57,7 +57,7 @@ transition: 0.5s ease-in-out !important;
     transition: 0.5s ease-in-out !important;
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     position: absolute !important;
-    bottom: -25% !important;
+    bottom: -30% !important;
     background-color: rgb(255, 255, 255) !important;
     border: 1px solid rgba(255, 255, 255, 0.233);
  color: var(--bg-color) !important;
@@ -677,11 +677,17 @@ textarea {
 
 
 
-
+.text-truncate-4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
 .navfix {
 z-index: 911111 !important;
     position: fixed !important;
-    top: 0.9% !important;
+    top: 0.4% !important;
     transition: 0.4s ease-in-out !important;
     background-color: rgb(255, 255, 255) !important;
     backdrop-filter: blur(130px) !important;
