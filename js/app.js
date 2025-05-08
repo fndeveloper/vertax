@@ -28,7 +28,6 @@ window.addEventListener("scroll", function () {
   navunder.style.width = `${scrollProgress}vw`
   var navbar = document.getElementById("navbar");
   var navbar1 = document.getElementById("navbar1");
-  var iconf = document.querySelectorAll(".btn-red");
   const logo = document.querySelector(".logo_nb");
 
   var navlinkd = this.document.querySelectorAll(".nav-item>.nav-link")
@@ -36,21 +35,13 @@ window.addEventListener("scroll", function () {
 
   if (window.scrollY > 550) {
     navbar.classList.add("navfix");
-
-    iconf.forEach((e) => {
-      e.classList.add("icon-fixeds");
-    });
-
-
     navlinkd.forEach((e) => {
       e.classList.add("nav-sec-col");
     });
   }
   else {
 
-    iconf.forEach((e) => {
-      e.classList.remove("icon-fixeds")
-    })
+   
     navbar.classList.remove("navfix");
     navlinkd.forEach((e) => {
 
