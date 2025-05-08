@@ -90,21 +90,21 @@ for (i = 0; i < acc.length; i++) {
 
 
 // ====================== LOADER START ======================
-// document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
 
 
-//   const load = document.getElementById("loader");
+  const load = document.getElementById("loader");
 
-//   load.style.transition = "opacity 0.9s ease, top 0.6s ease";
+  load.style.transition = "opacity 0.9s ease, top 0.6s ease";
 
-//   setTimeout(() => {
-//     load.style.opacity = "0";
-//     setTimeout(() => {
-//       load.style.top = "-100%";
+  setTimeout(() => {
+    load.style.opacity = "0";
+    setTimeout(() => {
+      load.style.top = "-100%";
 
-//     }, 0);
-//   }, 0);
-// });
+    }, 0);
+  }, 0);
+});
 
 // ====================== LOADER END ==========================
 
