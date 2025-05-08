@@ -1832,6 +1832,10 @@ transform:  rotate(50deg);
     background-color: rgb(219, 219, 219) !important;
     opacity: 1;
 }
+.about_slider .swiper-slide  p{
+    font-size: 14px !important;
+font-weight: 400 !important;
+}
 
   .testimonail_div .swiper-pagination-bullet-active {
 background-color: var(--color1) !important;
