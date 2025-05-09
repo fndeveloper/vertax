@@ -199,3 +199,12 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 // SWIPER HOME JS 
+
+
+//  ===================== QUERY FORM =========================
+//  const urlParams = new URLSearchParams(window.location.search);
+//   if (urlParams.get('submitted') === 'true') {
+//     const modal = bootstrap.Modal.getOrCreateInstance(document.getElementById('customInquiryModal'));
+//     modal.hide();
+//   } 
+//  ====================== QUERY FORM ============================
