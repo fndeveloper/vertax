@@ -101,7 +101,7 @@
                     <div
                         class="col-12 main_prodcut_page_cards    mb-3 d-flex flex-lg-row  flex-column  justify-content-center align-items-center bg-white shadow-sm p-3 rounded-3 ">
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-12">
 
                             <img src="Assets/images/Banner-Image/banner-img-11.jpg"
                                 class="img-fluid col-lg-11 col-12 image_prodct_page_card" alt="">
@@ -134,7 +134,7 @@
                             </p>
                             <div class="col-12 d-flex flex-lg-row flex-column justify-content-between">
                                 <!-- -========================= BUTTON START ============================= -->
-                                <button class="btn-53 col-lg-4 col-5 mx-lg-0  border border-1 shadow ">
+                                <button class="btn-53 col-lg-4 col-8 mx-lg-0 my-lg-0 my-2 mx-auto border border-1 shadow ">
                                     <!-- -========================= div START ============================= -->
 
                                     <div class="original ">Shedule Meeting</div>
@@ -154,13 +154,13 @@
                                  <!--=========================== QERY FORM START====================================  -->
                           <button 
   type="button" 
-  class="btn rounded-3 mx-auto col-lg-4 col-5 border border-2" 
+  class=" mx-auto col-lg-4 col-8 my-lg-0 my-2 border border-1 inqbtn mx-lg-0 mx-auto p-1 mb-2" 
   data-bs-toggle="modal" 
   data-bs-target="#customInquiryModal"
 >
   Inquiry Now
 </button>
-
+<!-- ================== MODAL START ================= -->
 <div class="modal fade modal_inquiry" id="customInquiryModal" tabindex="-1" aria-labelledby="customInquiryModalLabel" aria-hidden="true">
   <div class="modal-dialog  modal_dialog_inquiry">
     <div class="modal-content">
@@ -201,9 +201,11 @@
     </div>
   </div>
 </div>
+<!-- ================== MODAL END ================= -->
+
                                  <!-- =========================== QERY FORM END==================================== -->
                                 <div class=" col-lg-1 col-12 mt-lg-0 mt-2  text-center text-lg-end">
-                                    <a href="">
+                                    <a href="buoylight.html">
                                         <i
                                             class="fa-solid border border-1 p-2 rounded-circle pe-2 fs-4 fa-location-arrow text-end"></i>
 
@@ -221,7 +223,7 @@
                     <div
                         class="col-12 main_prodcut_page_cards    mb-3 d-flex flex-lg-row  flex-column  justify-content-center align-items-center bg-white shadow-sm p-3 rounded-3 ">
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-12">
 
                             <img src="Assets/images/Banner-Image/BuoySPOT_banner.jpg"
                                 class="img-fluid col-lg-11 col-12 image_prodct_page_card" alt="">
@@ -250,9 +252,9 @@
                                 For POC or any pilot, you may contact at our below form or email
                                 enquiry@aisystemsoft.com
                             </p>
-                            <div class="col-12 d-flex flex-lg-row flex-column justify-content-between">
+                             <div class="col-12 d-flex flex-lg-row flex-column justify-content-between">
                                 <!-- -========================= BUTTON START ============================= -->
-                                <button class="btn-53 col-lg-4 col-9 mx-lg-0 mx-auto border border-1 shadow ">
+                                <button class="btn-53 col-lg-4 col-8 mx-lg-0 my-lg-0 my-2 mx-auto border border-1 shadow ">
                                     <!-- -========================= div START ============================= -->
 
                                     <div class="original ">Shedule Meeting</div>
@@ -269,9 +271,61 @@
 
                                 </button>
                                 <!-- -========================= BUTTON END ============================= -->
+                                 <!--=========================== QERY FORM START====================================  -->
+                          <button 
+  type="button" 
+  class=" mx-auto col-lg-4 col-8 my-lg-0 my-2 border border-1 inqbtn mx-lg-0 mx-auto p-1 mb-2" 
+  data-bs-toggle="modal" 
+  data-bs-target="#customInquiryModal"
+>
+  Inquiry Now
+</button>
+<!-- ================== MODAL START ================= -->
+<div class="modal fade modal_inquiry" id="customInquiryModal" tabindex="-1" aria-labelledby="customInquiryModalLabel" aria-hidden="true">
+  <div class="modal-dialog  modal_dialog_inquiry">
+    <div class="modal-content">
+     
+      <div class="modal-body">
+       <div class="col-12 d-flex flex-column p-2 text-white py-2">
+    <h3 class="text-dark  mb-4">For Product Inquiry</h3>
+<form action="/Inquiry/inquiryform" id="inquiryform" method="post">        <input type="text" class="form-control my-2 mb-3 col-10" placeholder="Your Name" name="nm1" id="nm1" maxlength="25">
+        <input type="email" class="form-control mb-2 mb-3 col-12" placeholder="Your Email" name="emailadd" id="emailadd" maxlength="35">
+        <select name="product_name" id="product_name" class="form-select mb-4">
+            <option value="" class="text-white" selected="">Select Product Please</option>
+            <option value="bouylIGHT">bouylIGHT</option>
+            <option value="buoySPOT">buoySPOT</option>
+            <option value="buoySPY">buoySPY</option>
+            <option value="callMATICS">callMATICS</option>
+            <option value="planetSCAN">planetSCAN</option>
+        </select>
+        <input type="number" class="form-control mb-2 mb-3 col-12" placeholder="Your Number" name="numadd" id="numadd" maxlength="35">
 
-                                <div class=" col-lg-6 col-12 mt-lg-0 mt-2  text-center text-lg-end">
-                                    <a href="">
+         <input type="hidden" id="ip" name="">
+        <input type="text" class="form-control my-2 mb-3 col-10" placeholder="Enter Your city" name="city" id="city" maxlength="20">
+        <input type="text" class="form-control my-2 mb-3 col-10" placeholder="Enter Your country" name="country" id="country" maxlength="25">
+    <button class="btn-53 col-5 mx-auto border border-2">
+  <div class="original">Submit</div>
+  <a href="" class="text-white  text-decoration-none">
+  <div class="letters">
+    
+  <span>Submit</span>
+</div>
+</a>
+</button>
+</form>    
+
+    
+</div>
+      </div>
+   
+    </div>
+  </div>
+</div>
+<!-- ================== MODAL END ================= -->
+
+                                 <!-- =========================== QERY FORM END==================================== -->
+                                <div class=" col-lg-1 col-12 mt-lg-0 mt-2  text-center text-lg-end">
+                                    <a href="buoylight.html">
                                         <i
                                             class="fa-solid border border-1 p-2 rounded-circle pe-2 fs-4 fa-location-arrow text-end"></i>
 
@@ -289,7 +343,7 @@
                     <div
                         class="col-12 main_prodcut_page_cards    mb-3 d-flex flex-lg-row  flex-column  justify-content-center align-items-center bg-white shadow-sm p-3 rounded-3 ">
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-12">
 
                             <img src="Assets/images/Banner-Image/buoySPY_banner.jpg"
                                 class="img-fluid col-lg-11 col-12 image_prodct_page_card" alt="">
@@ -327,9 +381,9 @@
                                 any pilot, you may contact at our below form or email enquiry@aisystemsoft.com
 
                             </p>
-                            <div class="col-12 d-flex flex-lg-row flex-column justify-content-between">
+                             <div class="col-12 d-flex flex-lg-row flex-column justify-content-between">
                                 <!-- -========================= BUTTON START ============================= -->
-                                <button class="btn-53 col-lg-4 col-9 mx-lg-0 mx-auto border border-1 shadow ">
+                                <button class="btn-53 col-lg-4 col-8 mx-lg-0 my-lg-0 my-2 mx-auto border border-1 shadow ">
                                     <!-- -========================= div START ============================= -->
 
                                     <div class="original ">Shedule Meeting</div>
@@ -346,9 +400,61 @@
 
                                 </button>
                                 <!-- -========================= BUTTON END ============================= -->
+                                 <!--=========================== QERY FORM START====================================  -->
+                          <button 
+  type="button" 
+  class=" mx-auto col-lg-4 col-8 my-lg-0 my-2 border border-1 inqbtn mx-lg-0 mx-auto p-1 mb-2" 
+  data-bs-toggle="modal" 
+  data-bs-target="#customInquiryModal"
+>
+  Inquiry Now
+</button>
+<!-- ================== MODAL START ================= -->
+<div class="modal fade modal_inquiry" id="customInquiryModal" tabindex="-1" aria-labelledby="customInquiryModalLabel" aria-hidden="true">
+  <div class="modal-dialog  modal_dialog_inquiry">
+    <div class="modal-content">
+     
+      <div class="modal-body">
+       <div class="col-12 d-flex flex-column p-2 text-white py-2">
+    <h3 class="text-dark  mb-4">For Product Inquiry</h3>
+<form action="/Inquiry/inquiryform" id="inquiryform" method="post">        <input type="text" class="form-control my-2 mb-3 col-10" placeholder="Your Name" name="nm1" id="nm1" maxlength="25">
+        <input type="email" class="form-control mb-2 mb-3 col-12" placeholder="Your Email" name="emailadd" id="emailadd" maxlength="35">
+        <select name="product_name" id="product_name" class="form-select mb-4">
+            <option value="" class="text-white" selected="">Select Product Please</option>
+            <option value="bouylIGHT">bouylIGHT</option>
+            <option value="buoySPOT">buoySPOT</option>
+            <option value="buoySPY">buoySPY</option>
+            <option value="callMATICS">callMATICS</option>
+            <option value="planetSCAN">planetSCAN</option>
+        </select>
+        <input type="number" class="form-control mb-2 mb-3 col-12" placeholder="Your Number" name="numadd" id="numadd" maxlength="35">
 
-                                <div class=" col-lg-6 col-12 mt-lg-0 mt-2  text-center text-lg-end">
-                                    <a href="">
+         <input type="hidden" id="ip" name="">
+        <input type="text" class="form-control my-2 mb-3 col-10" placeholder="Enter Your city" name="city" id="city" maxlength="20">
+        <input type="text" class="form-control my-2 mb-3 col-10" placeholder="Enter Your country" name="country" id="country" maxlength="25">
+    <button class="btn-53 col-5 mx-auto border border-2">
+  <div class="original">Submit</div>
+  <a href="" class="text-white  text-decoration-none">
+  <div class="letters">
+    
+  <span>Submit</span>
+</div>
+</a>
+</button>
+</form>    
+
+    
+</div>
+      </div>
+   
+    </div>
+  </div>
+</div>
+<!-- ================== MODAL END ================= -->
+
+                                 <!-- =========================== QERY FORM END==================================== -->
+                                <div class=" col-lg-1 col-12 mt-lg-0 mt-2  text-center text-lg-end">
+                                    <a href="buoylight.html">
                                         <i
                                             class="fa-solid border border-1 p-2 rounded-circle pe-2 fs-4 fa-location-arrow text-end"></i>
 
@@ -365,7 +471,7 @@
                     <div
                         class="col-12 main_prodcut_page_cards    mb-3 d-flex flex-lg-row  flex-column  justify-content-center align-items-center bg-white shadow-sm p-3 rounded-3 ">
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-12">
 
                             <img src="Assets/images/Banner-Image/callmATICS_banner.jpg"
                                 class="img-fluid col-lg-11 col-12 image_prodct_page_card" alt="">
@@ -402,9 +508,9 @@
                                 technology by using the deep learning and machine learning techniques. For POC or any
                                 pilot, you may contact at our below form or email enquiry@aisystemsoft.com.
                             </p>
-                            <div class="col-12 d-flex flex-lg-row flex-column justify-content-between">
+                             <div class="col-12 d-flex flex-lg-row flex-column justify-content-between">
                                 <!-- -========================= BUTTON START ============================= -->
-                                <button class="btn-53 col-lg-4 col-9 mx-lg-0 mx-auto border border-1 shadow ">
+                                <button class="btn-53 col-lg-4 col-8 mx-lg-0 my-lg-0 my-2 mx-auto border border-1 shadow ">
                                     <!-- -========================= div START ============================= -->
 
                                     <div class="original ">Shedule Meeting</div>
@@ -421,9 +527,61 @@
 
                                 </button>
                                 <!-- -========================= BUTTON END ============================= -->
+                                 <!--=========================== QERY FORM START====================================  -->
+                          <button 
+  type="button" 
+  class=" mx-auto col-lg-4 col-8 my-lg-0 my-2 border border-1 inqbtn mx-lg-0 mx-auto p-1 mb-2" 
+  data-bs-toggle="modal" 
+  data-bs-target="#customInquiryModal"
+>
+  Inquiry Now
+</button>
+<!-- ================== MODAL START ================= -->
+<div class="modal fade modal_inquiry" id="customInquiryModal" tabindex="-1" aria-labelledby="customInquiryModalLabel" aria-hidden="true">
+  <div class="modal-dialog  modal_dialog_inquiry">
+    <div class="modal-content">
+     
+      <div class="modal-body">
+       <div class="col-12 d-flex flex-column p-2 text-white py-2">
+    <h3 class="text-dark  mb-4">For Product Inquiry</h3>
+<form action="/Inquiry/inquiryform" id="inquiryform" method="post">        <input type="text" class="form-control my-2 mb-3 col-10" placeholder="Your Name" name="nm1" id="nm1" maxlength="25">
+        <input type="email" class="form-control mb-2 mb-3 col-12" placeholder="Your Email" name="emailadd" id="emailadd" maxlength="35">
+        <select name="product_name" id="product_name" class="form-select mb-4">
+            <option value="" class="text-white" selected="">Select Product Please</option>
+            <option value="bouylIGHT">bouylIGHT</option>
+            <option value="buoySPOT">buoySPOT</option>
+            <option value="buoySPY">buoySPY</option>
+            <option value="callMATICS">callMATICS</option>
+            <option value="planetSCAN">planetSCAN</option>
+        </select>
+        <input type="number" class="form-control mb-2 mb-3 col-12" placeholder="Your Number" name="numadd" id="numadd" maxlength="35">
 
-                                <div class=" col-lg-6 col-12 mt-lg-0 mt-2  text-center text-lg-end">
-                                    <a href="">
+         <input type="hidden" id="ip" name="">
+        <input type="text" class="form-control my-2 mb-3 col-10" placeholder="Enter Your city" name="city" id="city" maxlength="20">
+        <input type="text" class="form-control my-2 mb-3 col-10" placeholder="Enter Your country" name="country" id="country" maxlength="25">
+    <button class="btn-53 col-5 mx-auto border border-2">
+  <div class="original">Submit</div>
+  <a href="" class="text-white  text-decoration-none">
+  <div class="letters">
+    
+  <span>Submit</span>
+</div>
+</a>
+</button>
+</form>    
+
+    
+</div>
+      </div>
+   
+    </div>
+  </div>
+</div>
+<!-- ================== MODAL END ================= -->
+
+                                 <!-- =========================== QERY FORM END==================================== -->
+                                <div class=" col-lg-1 col-12 mt-lg-0 mt-2  text-center text-lg-end">
+                                    <a href="buoylight.html">
                                         <i
                                             class="fa-solid border border-1 p-2 rounded-circle pe-2 fs-4 fa-location-arrow text-end"></i>
 
@@ -440,7 +598,7 @@
                     <div
                         class="col-12 main_prodcut_page_cards    mb-3 d-flex flex-lg-row  flex-column  justify-content-center align-items-center bg-white shadow-sm p-3 rounded-3 ">
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-12">
 
                             <img src="Assets/images/Banner-Image/planetSCAN.jpg"
                                 class="img-fluid col-lg-11 col-12 image_prodct_page_card " alt="">
@@ -483,9 +641,9 @@
                                 technology by using the deep learning and machine learning techniques. For POC or any
                                 pilot, you may contact at our below form or email enquiry@aisystemsoft.com.
                             </p>
-                            <div class="col-12 d-flex flex-lg-row flex-column justify-content-between">
+                             <div class="col-12 d-flex flex-lg-row flex-column justify-content-between">
                                 <!-- -========================= BUTTON START ============================= -->
-                                <button class="btn-53 col-lg-4 col-9 mx-lg-0 mx-auto border border-1 shadow ">
+                                <button class="btn-53 col-lg-4 col-8 mx-lg-0 my-lg-0 my-2 mx-auto border border-1 shadow ">
                                     <!-- -========================= div START ============================= -->
 
                                     <div class="original ">Shedule Meeting</div>
@@ -502,9 +660,61 @@
 
                                 </button>
                                 <!-- -========================= BUTTON END ============================= -->
+                                 <!--=========================== QERY FORM START====================================  -->
+                          <button 
+  type="button" 
+  class=" mx-auto col-lg-4 col-8 my-lg-0 my-2 border border-1 inqbtn mx-lg-0 mx-auto p-1 mb-2" 
+  data-bs-toggle="modal" 
+  data-bs-target="#customInquiryModal"
+>
+  Inquiry Now
+</button>
+<!-- ================== MODAL START ================= -->
+<div class="modal fade modal_inquiry" id="customInquiryModal" tabindex="-1" aria-labelledby="customInquiryModalLabel" aria-hidden="true">
+  <div class="modal-dialog  modal_dialog_inquiry">
+    <div class="modal-content">
+     
+      <div class="modal-body">
+       <div class="col-12 d-flex flex-column p-2 text-white py-2">
+    <h3 class="text-dark  mb-4">For Product Inquiry</h3>
+<form action="/Inquiry/inquiryform" id="inquiryform" method="post">        <input type="text" class="form-control my-2 mb-3 col-10" placeholder="Your Name" name="nm1" id="nm1" maxlength="25">
+        <input type="email" class="form-control mb-2 mb-3 col-12" placeholder="Your Email" name="emailadd" id="emailadd" maxlength="35">
+        <select name="product_name" id="product_name" class="form-select mb-4">
+            <option value="" class="text-white" selected="">Select Product Please</option>
+            <option value="bouylIGHT">bouylIGHT</option>
+            <option value="buoySPOT">buoySPOT</option>
+            <option value="buoySPY">buoySPY</option>
+            <option value="callMATICS">callMATICS</option>
+            <option value="planetSCAN">planetSCAN</option>
+        </select>
+        <input type="number" class="form-control mb-2 mb-3 col-12" placeholder="Your Number" name="numadd" id="numadd" maxlength="35">
 
-                                <div class=" col-lg-6 col-12 mt-lg-0 mt-2  text-center text-lg-end">
-                                    <a href="">
+         <input type="hidden" id="ip" name="">
+        <input type="text" class="form-control my-2 mb-3 col-10" placeholder="Enter Your city" name="city" id="city" maxlength="20">
+        <input type="text" class="form-control my-2 mb-3 col-10" placeholder="Enter Your country" name="country" id="country" maxlength="25">
+    <button class="btn-53 col-5 mx-auto border border-2">
+  <div class="original">Submit</div>
+  <a href="" class="text-white  text-decoration-none">
+  <div class="letters">
+    
+  <span>Submit</span>
+</div>
+</a>
+</button>
+</form>    
+
+    
+</div>
+      </div>
+   
+    </div>
+  </div>
+</div>
+<!-- ================== MODAL END ================= -->
+
+                                 <!-- =========================== QERY FORM END==================================== -->
+                                <div class=" col-lg-1 col-12 mt-lg-0 mt-2  text-center text-lg-end">
+                                    <a href="buoylight.html">
                                         <i
                                             class="fa-solid border border-1 p-2 rounded-circle pe-2 fs-4 fa-location-arrow text-end"></i>
 

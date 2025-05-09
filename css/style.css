@@ -89,6 +89,10 @@ transition: 0.5s ease-in-out !important;
     height: max-content !important;
 transition: 0.6s ease-in-out !important; 
 }
+.inqbtn{
+    background-color: transparent !important;
+     border-radius: 40px !important;
+}
 
   .under_line{
     background-color: #002b2211;
@@ -716,6 +720,12 @@ textarea {
     object-fit: cover !important;
     background-size: cover !important;
     background-position: center !important;
+  }
+  @media (max-width:992px) {
+  .image_prodct_page_card{
+height: 40vh !important;
+width: 100% !important;
+}
   }
 .navfix {
 z-index: 1111 !important;
