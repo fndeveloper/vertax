@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   const load = document.getElementById("loader");
-
+if(load){
   load.style.transition = "opacity 0.9s ease, top 0.6s ease";
 
   setTimeout(() => {
@@ -104,6 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }, 0);
   }, 0);
+}
 });
 
 // ====================== LOADER END ==========================
@@ -173,9 +174,59 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
+//  ===================== QUERY FORM =========================
+// document.getElementById("inquiryformbtn").addEventListener("click", (e) => {
+//   var inquiryform = document.getElementById("inquiryform");
+//  var formData = {};
+//   inquiryform.querySelectorAll("input, select, textarea").forEach(element => {
+//     // console.log(element.placeholder + ": " + element.value);
+//     formData.push(element.value)
+//         localStorage.setItem("QuieryFrom",JSON.stringify(formData))
+//   });
+// });
+document.getElementById("inquiryformbtn").addEventListener("click", (e) => {
+  var inquiryform = document.getElementById("inquiryform");
+  var formData = [];
+
+  inquiryform.querySelectorAll("input, select, textarea").forEach(element => {
+    formData.push(element.value);
+  });
+
+  localStorage.setItem("QueryForm", JSON.stringify(formData));
+   var modalElement = document.getElementById("customInquiryModal");
+  var modal = bootstrap.Modal.getInstance(modalElement);
+  modal.hide();
+
+  setTimeout(() => {
+    
+  Swal.fire({
+  title: "Form Is Submit Successfull",
+
+  icon: "success"
+});
+  }, 1500);
+});
+
+
+
+//   setTimeout(() => {
+//   Swal.fire({
+//   title: "Good job!",
+//   text: "You clicked the button!",
+//   icon: "success"
+// });
+//   }, 1000);
+// })
+//  ====================== QUERY FORM ============================
+
+
+
 // SWIPER HOME JS 
 // Get elements{
   var swiper = new Swiper(".mySwiper", {
+  
   slidesPerView: 3,
   spaceBetween: 24,
   pagination: {
@@ -199,12 +250,3 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 // SWIPER HOME JS 
-
-
-//  ===================== QUERY FORM =========================
-//  const urlParams = new URLSearchParams(window.location.search);
-//   if (urlParams.get('submitted') === 'true') {
-//     const modal = bootstrap.Modal.getOrCreateInstance(document.getElementById('customInquiryModal'));
-//     modal.hide();
-//   } 
-//  ====================== QUERY FORM ============================

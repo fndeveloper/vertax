@@ -698,10 +698,7 @@ select {
     color: var(--para-color) !important;
 }
 
-input,
-textarea {
-    color: white !important;
-}
+
 
 
 
@@ -716,7 +713,7 @@ textarea {
     text-align: justify !important;
   }
   .image_prodct_page_card{
-    height: 85vh !important;
+    height: 75vh !important;
     object-fit: cover !important;
     background-size: cover !important;
     background-position: center !important;
@@ -807,9 +804,7 @@ z-index: -1;
 
 @media (max-width:992px) {
 
-    .d-flex>.input-group>button {
-        display: none !important;
-    }
+  
 }
 
 .ser {
@@ -1663,17 +1658,6 @@ img {
     /* Text ko white karne ke liye */
 }
 
-.iti input {
-    position: absolute;
-    opacity: 1 !important;
-    padding: 6px 0px;
-    color: var(--bg-color);
-    border: none !important;
-    border-radius: 0% !important;
-    border-bottom: 1px solid rgba(211, 211, 211, 0.349) !important;
-    background-color: var(--bg-color) !important;/
-}
-
 /* MARQUEE START */
 
 /* MARQUEE END */
@@ -1779,12 +1763,6 @@ swiper-slide img {
 
 /* MARQUE SLIDER END */
 
-
-
-.form_ser>div>div>.iti input {
-    border: 1px solid var(--border-col) !important;
-    background-color: transparent !important;
-}
 
 .fa-location-arrow{
     background-color: white ;
