@@ -708,10 +708,11 @@ select {
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
-  .prodcut_page_cards{
+  .prodcut_page_cards p{
     font-size: 14px !important;
     text-align: justify !important;
   }
+ 
   .image_prodct_page_card{
     height: 75vh !important;
     object-fit: cover !important;
