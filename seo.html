@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ======================== Required meta tags ======================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SEO | </title>
+    <!-- ======================== EXTERNEL CSS FILE ======================== -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+<!-- ======================== FAVICON ======================== -->
+  <link rel="shortcut icon"
+    href="data:image/png;base64,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"
+    type="image/x-icon">
+
+  <!-- ======================== FAVICON ======================== -->
+ 
+
+    <!-- ======================== EXTERNEL CSS FILE ======================== -->
+
+    <!-- ======================== Bootstrap CSS ======================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- ======================== FONT AWESOME CDN ======================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ======================== intl-tel-input CSS ======================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+    <!-- ======================== Utils (Optional) ======================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"></script>
+    <!-- ======================== SWIPER CDN ======================== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- ======================== SWIPER CDN ======================== -->
+    <!-- ======================== Swiper CSS ======================== -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+    <!-- ======================== HEADER START ======================== -->
+
+
+    <!-- ! NOTE THIS CONTENT IS REMAIN SAME IN EVERY PAGE -->
+    <div id="header"></div>
+    <!-- ! NOTE THIS CONTENT IS REMAIN SAME IN EVERY PAGE -->
+
+    <!-- ======================== HEADER END ======================== -->
+    <!-- ======================== MAIN 1 START ======================== -->
+    <section>
+        <div class="container-fluid  home_new  d-flex flex-column justify-content-center  align-items-center ">
+            <!-- =============================== BANNER IMAGE START =========================================== -->
+            <img src="Assets/images/Pictures/seo_service_card_img.jpg" class="m-0  p-0  position-absolute banner-img_new" alt="">
+            <!-- =============================== BANNER IMAGE END =========================================== -->
+
+            <!-- ======================== MAIN SUB DIV START ======================== -->
+            <div class="col-lg-6  col-12 me-auto d-flex  flex-column justify-content-center pt-lg-5  ">
+
+                <h2 class="py-2 ps-3 display-4 text-white fw-bolder text-start  head-1">SEO </h2>
+                <h5 class="text-start ps-3 py-2   d-lg-flex  text-white fw-light">Offering SEO , specializes in
+                  Empowering businesses with cutting-edge AI technologies to streamline business operations, enhance decision-making, and drive innovation.</h5>
+
+
+
+            </div>
+            <!-- ======================== MAIN SUB DIV END ======================== -->
+
+            <div class="banner_class">
+
+            </div>
+            <!-- ======================== BANNER COLOR CONRTOLL END ========================= -->
+
+
+
+
+        </div>
+    </section>
+    <!-- ======================== MAIN 1 END ======================== -->
+
+
+    <!-- ======================== AI PRODUCT SERVICE START ======================== -->
+    <section>
+        <div class="container-fluid mt-5 py-5  d-flex flex-column justify-content-center align-items-center bg-light">
+
+            <!-- ======================== DIV START ===================== -->
+            <div class="d-flex  flex-lg-row flex-column  justify-content-between container-fluid align-items-center">
+                <h6 class="under_line  px-3 ">Our SEO<i
+                        class="ms-2 fa-solid fa-caret-right  text-white px-2 py-1 rounded-circle bg_light "></i></h6>
+                <p class="col-lg-6 fs-6 text-end">
+                Harnessing AI to Drive Smarter AI Driven Web & App <br> Development for Seamless Automation
+             </p>
+            </div>
+            <!-- ========================  DIV END ===================== -->
+
+
+            <!-- ===================== SERVICE CONTAINER START -->
+            <div class="container d-flex flex-lg-column flex-column py-5 ">
+                <!-- ======================== ROW START  ========================-->
+                <div class="row justify-content-between py-2 ">
+                    <!--=============== Service Card START =================================== -->
+                    <div
+                        class="col-12 main_prodcut_page_cards    mb-3 d-flex flex-lg-row  flex-column  justify-content-center align-items-center bg-white shadow-sm p-3 rounded-3 ">
+
+                        <div class="col-lg-6 col-12">
+
+                            <img src="Assets/images/Banner-Image/AI_DRIVEN (2).jpg"
+                                class="img-fluid col-lg-11 col-12 image_prodct_page_card" alt="">
+                        </div>
+                        <!-- ================= CARD CONTENT START =========================== -->
+                        <div class="service-car col-lg-6  d-flex flex-column  col-12    prodcut_page_cards     ">
+
+                            <h2 class="fw-semibold mb-2 fs-3 pt-3 ">
+                              
+Local SEO </h2>
+                            <p class="  fw-normal   ">
+Our Custom AI Driven Web & App Development solutions leverage AI-powered technologies is available to develop the website, which have the AI features and provide the easeness to customers and adjunct personnel. We design AI based web and mobile applications that seamlessly integrate with your business applications.
+
+
+                            </p>
+                            <div class="col-12 d-flex flex-lg-row flex-column justify-content-between">
+                                <!-- -========================= BUTTON START ============================= -->
+                                <button
+                                    class="btn-53 col-lg-4 col-8 mx-lg-0 my-lg-0 my-2 mx-auto border border-1 shadow ">
+                                    <!-- -========================= div START ============================= -->
+
+                                    <div class="original ">Shedule Meeting</div>
+                                    <!-- -========================= div END ============================= -->
+                                    <!-- -========================= A HREF START ============================= -->
+
+                                    <a href="" class="text-white text-decoration-none">
+                                        <div class="letters">
+
+                                            <span>Shedule Meeting</span>
+                                        </div>
+                                    </a>
+                                    <!-- -========================= A HREF END ============================= -->
+
+                                </button>
+                                <!-- -========================= BUTTON END ============================= -->
+                                <!--=========================== QERY FORM START====================================  -->
+                                <button type="button"
+                                    class=" mx-auto col-lg-4 col-8 my-lg-0 my-2 border border-1 inqbtn mx-lg-0 mx-auto p-1 mb-2"
+                                    data-bs-toggle="modal" data-bs-target="#customInquiryModal">
+                                    Inquiry Now
+                                </button>
+
+<!-- ================== MODAL START ================= -->
+<div class="modal fade modal_inquiry" id="customInquiryModal" tabindex="-1" aria-labelledby="customInquiryModalLabel" aria-hidden="true">
+  <div class="modal-dialog  modal_dialog_inquiry">
+    <div class="modal-content">
+     
+      <div class="modal-body">
+       <div class="col-12 d-flex flex-column p-2 text-white py-2">
+    <h3 class="text-dark  mb-4">For Product Inquiry</h3>
+<form action="#" id="inquiryform" method="post">        <input type="text" class="form-control my-2 mb-3 col-10" placeholder="Your Name" name="nm1" id="nm1" maxlength="25">
+        <input type="email" class="form-control mb-2 mb-3 col-12" placeholder="Your Email" name="emailadd" id="emailadd" maxlength="35">
+       <select name="product_name" id="product_name" class="form-select mb-4">
+            <option value="Custom Web &amp; App Development" selected="">AI Custom Web &amp; App Development</option>
+            <option value="AI E-Commerce Development">AI E-Commerce Development</option>
+            <option value="Cross Platform AI Development">Cross Platform AI Development</option>
+        </select>
+        <input type="number" class="form-control mb-2 mb-3 col-12" placeholder="Your Number" name="numadd" id="numadd" maxlength="35">
+
+         <input type="hidden" id="ip" name="">
+        <input type="text" class="form-control my-2 mb-3 col-10" placeholder="Enter Your city" name="city" id="city" maxlength="20">
+        <input type="text" class="form-control my-2 mb-3 col-10" placeholder="Enter Your country" name="country" id="country" maxlength="25">
+    <button class="btn-53 col-5 mx-auto border border-2" id="inquiryformbtn">
+  <div class="original">Submit</div>
+  <a  class="text-white  text-decoration-none">
+  <div class="letters">
+    
+  <span>Submit</span>
+</div>
+</a>
+</button>
+</form>    
+
+    
+</div>
+      </div>
+   
+    </div>
+  </div>
+</div>
+<!-- ================== MODAL END ================= -->
+                                <!-- =========================== QERY FORM END==================================== -->
+                                <div class=" col-lg-1 col-12 mt-lg-0 mt-2  text-center text-lg-end">
+                                    <a href="Custom_Web_&_App_Development.html">
+                                        <i
+                                            class="fa-solid border border-1 p-2 rounded-circle pe-2 fs-4 fa-location-arrow text-end"></i>
+
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- ================= CARD CONTENT END =========================== -->
+
+                    </div>
+                    <!--=============== Service Card END =================================== -->
+
+                    <!--=============== Service Card START =================================== -->
+                    <div
+                        class="col-12 main_prodcut_page_cards    mb-3 d-flex flex-lg-row  flex-column  justify-content-center align-items-center bg-white shadow-sm p-3 rounded-3 ">
+
+                        <div class="col-lg-6 col-12">
+
+                            <img src="Assets/images/Banner-Image/AI_DRIVEN (1).webp"
+                                class="img-fluid col-lg-11 col-12 image_prodct_page_card" alt="">
+                        </div>
+                        <!-- ================= CARD CONTENT START =========================== -->
+                        <div class="service-car col-lg-6  col-12   prodcut_page_cards     ">
+
+                            <h2 class="fw-semibold mb-2 fs-3 pt-3 ">
+
+Technical SEO</h2>
+                            <p class="  fw-normal   ">
+                            Our Custom AI Driven E-Commerce Development solutions leverage AI-powered technologies to help and boost your business with undefined strategies. There are numerous requirement on E-Commerce store and lots of resources are required to perform and complete the jobs. By enabling the AI technologies with E-Commerce Store, it will change the graph of your business and systems.   </p>
+                            <div class="col-12 d-flex flex-lg-row flex-column justify-content-between">
+                                <!-- -========================= BUTTON START ============================= -->
+                                <button
+                                    class="btn-53 col-lg-4 col-8 mx-lg-0 my-lg-0 my-2 mx-auto border border-1 shadow ">
+                                    <!-- -========================= div START ============================= -->
+
+                                    <div class="original ">Shedule Meeting</div>
+                                    <!-- -========================= div END ============================= -->
+                                    <!-- -========================= A HREF START ============================= -->
+
+                                    <a href="" class="text-white text-decoration-none">
+                                        <div class="letters">
+
+                                            <span>Shedule Meeting</span>
+                                        </div>
+                                    </a>
+                                    <!-- -========================= A HREF END ============================= -->
+
+                                </button>
+                                <!-- -========================= BUTTON END ============================= -->
+                                <!--=========================== QERY FORM START====================================  -->
+                                <button type="button"
+                                    class=" mx-auto col-lg-4 col-8 my-lg-0 my-2 border border-1 inqbtn mx-lg-0 mx-auto p-1 mb-2"
+                                    data-bs-toggle="modal" data-bs-target="#customInquiryModal">
+                                    Inquiry Now
+                                </button>
+
+
+                                <!-- =========================== QERY FORM END==================================== -->
+                                <div class=" col-lg-1 col-12 mt-lg-0 mt-2  text-center text-lg-end">
+                                    <a href="E-commerce_Development.html">
+                                        <i
+                                            class="fa-solid border border-1 p-2 rounded-circle pe-2 fs-4 fa-location-arrow text-end"></i>
+
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- ================= CARD CONTENT END =========================== -->
+
+                    </div>
+                    <!--=============== Service Card END =================================== -->
+
+                    <!--=============== Service Card START =================================== -->
+                    <div
+                        class="col-12 main_prodcut_page_cards    mb-3 d-flex flex-lg-row  flex-column  justify-content-center align-items-center bg-white shadow-sm p-3 rounded-3 ">
+
+                        <div class="col-lg-6 col-12">
+
+                            <img src="Assets/images/Banner-Image/sms-api-750x450.jpg"
+                                class="img-fluid col-lg-11 col-12 image_prodct_page_card" alt="">
+                        </div>
+                        <!-- ================= CARD CONTENT START =========================== -->
+                        <div class="service-car col-lg-6  col-12   prodcut_page_cards     ">
+
+                            <h2 class="fw-semibold mb-2 fs-3 pt-3 ">                        OFF / ON SEO
+ </h2>
+                            <p class="  fw-normal   ">
+An AI-base Business Application solution to observe activities inside the business area round the clock at all seasons, and then develop the solution according to your business needs. Our team have 25 years of experience in core development and now working on AI since 13 years and provide you the ultimate business application according to your needs.
+
+                           </p>
+                            <div class="col-12 d-flex flex-lg-row flex-column justify-content-between">
+                                <!-- -========================= BUTTON START ============================= -->
+                                <button
+                                    class="btn-53 col-lg-4 col-8 mx-lg-0 my-lg-0 my-2 mx-auto border border-1 shadow ">
+                                    <!-- -========================= div START ============================= -->
+
+                                    <div class="original ">Shedule Meeting</div>
+                                    <!-- -========================= div END ============================= -->
+                                    <!-- -========================= A HREF START ============================= -->
+
+                                    <a href="" class="text-white text-decoration-none">
+                                        <div class="letters">
+
+                                            <span>Shedule Meeting</span>
+                                        </div>
+                                    </a>
+                                    <!-- -========================= A HREF END ============================= -->
+
+                                </button>
+                                <!-- -========================= BUTTON END ============================= -->
+                                <!--=========================== QERY FORM START====================================  -->
+                                <button type="button"
+                                    class=" mx-auto col-lg-4 col-8 my-lg-0 my-2 border border-1 inqbtn mx-lg-0 mx-auto p-1 mb-2"
+                                    data-bs-toggle="modal" data-bs-target="#customInquiryModal">
+                                    Inquiry Now
+                                </button>
+
+
+                                <!-- =========================== QERY FORM END==================================== -->
+                                <div class=" col-lg-1 col-12 mt-lg-0 mt-2  text-center text-lg-end">
+                                    <a href="Cross_Platform_App_Development.html">
+                                        <i
+                                            class="fa-solid border border-1 p-2 rounded-circle pe-2 fs-4 fa-location-arrow text-end"></i>
+
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- ================= CARD CONTENT END =========================== -->
+
+                    </div>
+                    <!--=============== Service Card END =================================== -->
+                
+
+                </div>
+                <!-- ======================== ROW END ========================-->
+            </div>
+            <!-- ===================== SERVICE CONTAINER END -->
+
+        </div>
+    </section>
+    <!-- ======================== AI PRODUCT SERVICE END ======================== -->
+
+
+
+    <!-- ======================== FOOTER START ======================== -->
+    <!-- ! NOTE THIS CONTENT IS REMAIN SAME IN EVERY PAGE -->
+    <footer class=" footer pt-5 py-3">
+
+        <div class="container-fluid footer-content px-4 py-3">
+            <div class="row">
+                <div class="col-lg-3  col-12 mb-4">
+                    Vertax Solution
+
+                    <p class="locte 1 fs-6 ">Vertax Solution</p>
+                    <!-- ======================== <p><a href="mailto:cybron@cybroninternational.com" class="1">cybron@cybroninternational.com</a></p> ======================== -->
+                </div>
+
+                <div class="col-lg-3  col-12 col-md-6 mb-4 ps-lg-5">
+                    <h3 class="mb-3 1">Usefull Links</h3>
+                    <ul class="list-unstyled fs-6">
+                        <li class="mb-1 "><a href="index.html" class="1 fw-lighter text-decoration-none ">Home</a>
+                            <span class="navhover"></span>
+                        </li>
+                        <li class="mb-1"><a href="about.html" class="1 fw-lighter text-decoration-none">About Us</a>
+                        </li>
+                        <li class="mb-1"><a href="portfolio.html"
+                                class="1 fw-lighter text-decoration-none">Portfolio</a>
+                        </li>
+                        <li class="mb-1"><a href="Ai-Product-Solution.html"
+                                class="1 fw-lighter text-decoration-none">Service</a></li>
+                        <li class="mb-1"><a href="contact.html" class="1 fw-lighter text-decoration-none">Contact Us</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-3 col-12 col-md-6 mb-4 ps-lg-5">
+                    <h3 class="mb-3 1">Contact Us</h3>
+                    <ul class="list-unstyled fs-6">
+                        <li class="mb-1"><a
+                                href="mailto:info@vertaxsolutions.com?subject=Inquiry&body=Hello, I would like to know more about your services."
+                                class="1 fw-lighter text-decoration-none"> info@vertaxsolutions.com</a></li>
+                        <li class="mb-1 mt-2"><a href="tel:+16892764636" class="1 fw-lighter text-decoration-none">+1
+                                (689) 276-4636</a></li>
+
+
+                        <li class="mb-1 mt-2"><a
+                                href="https://www.google.com/maps/place/Conroy+Windermere,+FL-34786,+USA"
+                                class="1 fw-lighter text-decoration-none">
+                                Karachi Pakistan
+                            </a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-12 col-md-6 mb-4">
+                    <h3 class="mb-3 1">Subscribe newsletter</h3>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" maxlength="17" placeholder="Email Address"
+                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn bg 1" type="button">
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <p class="mb-0 mx-auto   pb-3 1 container bg rounded-3 border-0   p-3  text-center bottom-footer ">© 2024
+            Vertax Solution
+            All Rights Reserved</p>
+    </footer>
+    <!-- ! NOTE THIS CONTENT IS REMAIN SAME IN EVERY PAGE -->
+    <!-- ======================== FOOTER END ======================== -->
+
+    <!-- ======================== Option 1: Bootstrap Bundle with Popper ======================== -->
+    <!-- ======================== Option 1: Bootstrap Bundle with Popper ======================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- ======================== SWIPER CDN ======================== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <!-- ======================== EXTERNEL JS FILE ======================== -->
+    <script src="JS/app.js"></script>
+    <!-- ======================== EXTERNEL JS FILE ======================== -->
+
+</body>
+
+</html>
