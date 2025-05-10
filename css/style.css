@@ -1771,8 +1771,14 @@ swiper-slide img {
     transition: 0.5s ease-in-out !important;
     color: rgb(75, 81, 87)}
 .service-card:hover  .fa-location-arrow{
-background-color: lightslategrey;
-background-color: white;
+background-color: var(--color1) !important;
+color: white !important;
+transform:  rotate(50deg);
+
+}
+.service-car:hover  .fa-location-arrow{
+background-color: var(--color1) !important;
+color: white !important;
 transform:  rotate(50deg);
 
 }
