@@ -187,6 +187,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //   });
 // });
 document.getElementById("inquiryformbtn").addEventListener("click", (e) => {
+  e.preventDefault()
   var inquiryform = document.getElementById("inquiryform");
   var formData = [];
 
