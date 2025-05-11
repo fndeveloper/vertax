@@ -12,6 +12,21 @@ fetch("header.html")
   })
 
 // ========================== HEADER FETCH END ======================================
+// ========================== FOOTER FETCH START ======================================
+var footer = document.getElementById("footer")
+
+fetch("footer.html")
+  .then(e => e.text())
+  .then((e) => {
+
+    footer.innerHTML = `
+  ${e}
+  `
+
+  })
+
+// ========================== FOOTER FETCH END ======================================
+
 
 
 window.addEventListener("scroll", function () {
@@ -103,7 +118,7 @@ if(load){
       load.style.top = "-100%";
 
     }, 0);
-  }, 0);
+  },1500);
 }
 });
 

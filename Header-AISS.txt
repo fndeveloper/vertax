@@ -30,7 +30,7 @@
                             <span class="navhover"></span>
                             <ul class="dropdown-menu mx-auto">
                                 <li class="dropdown-submenu">
-                                    <a class="dropdown-item  dropdown-toggle nav-link" href="Ai-Product-Solution.html">
+                                    <a class="dropdown-item  dropdown-toggle nav-link" href="ai_product_solutions.html">
                                         Ai Product Solution  </a>
                                
                                         <ul class="dropdown-menu1 list-unstyled child-dropdown">
@@ -41,7 +41,7 @@
                                             
                                           </ul>
                                     </li>
-                                <li  class="dropdown-submenu"><a class="dropdown-item  dropdown-toggle nav-link" href="GRC-Services.html">GRC Services</a>
+                                <li  class="dropdown-submenu"><a class="dropdown-item  dropdown-toggle nav-link" href="grc_services.html">GRC Services</a>
                                  <ul class="dropdown-menu1 list-unstyled child-dropdown">
                                             <li><a class="dropdown-item" href="buoylight.html">
                                                   Governance Framework <br> implementations</a></li>
@@ -52,7 +52,7 @@
                                           </ul>
                                 </li>
                                 <li class="dropdown-submenu">
-                                    <a class="dropdown-item  dropdown-toggle nav-link" href="Web-AppDevelopment.html">AI Driven Web & App Development</a>
+                                    <a class="dropdown-item  dropdown-toggle nav-link" href="Ai_driven_web_devopment.html">AI Driven Web & App Development</a>
                                  <ul class="dropdown-menu1 list-unstyled child-dropdown">
                                             <li><a class="dropdown-item" href="buoylight.html">
                                                 Custom Web & App Development</a></li>
@@ -137,7 +137,7 @@
                             <span class="navhover"></span>
                             <ul class="dropdown-menu mx-auto">
                                 <li class="dropdown-submenu">
-                                    <a class="dropdown-item  dropdown-toggle nav-link" href="Ai-Product-Solution.html">
+                                    <a class="dropdown-item  dropdown-toggle nav-link" href="ai_product_solutions.html">
                                         Ai Product Solution  </a>
                                
                                         <ul class="dropdown-menu1 list-unstyled child-dropdown">
@@ -148,7 +148,7 @@
                                             
                                           </ul>
                                     </li>
-                                <li  class="dropdown-submenu"><a class="dropdown-item  dropdown-toggle nav-link" href="GRC-Services.html">GRC Services</a>
+                                <li  class="dropdown-submenu"><a class="dropdown-item  dropdown-toggle nav-link" href="grc_services.html">GRC Services</a>
                                  <ul class="dropdown-menu1 list-unstyled child-dropdown">
                                             <li><a class="dropdown-item" href="buoylight.html">
                                                 Governance Framework <br> implementations</a></li>
@@ -159,7 +159,7 @@
                                           </ul>
                                 </li>
                                 <li class="dropdown-submenu">
-                                    <a class="dropdown-item  dropdown-toggle nav-link" href="Web-AppDevelopment.html">AI Driven Web & App Development</a>
+                                    <a class="dropdown-item  dropdown-toggle nav-link" href="Ai_driven_web_devopment.html">AI Driven Web & App Development</a>
                                  <ul class="dropdown-menu1 list-unstyled child-dropdown">
                                             <li><a class="dropdown-item" href="buoylight.html">
                                                 Custom Web & App Development</a></li>
