@@ -192,18 +192,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 //  ===================== QUERY FORM =========================
-// document.getElementById("inquiryformbtn").addEventListener("click", (e) => {
-//   var inquiryform = document.getElementById("inquiryform");
-//  var formData = {};
-//   inquiryform.querySelectorAll("input, select, textarea").forEach(element => {
-//     // console.log(element.placeholder + ": " + element.value);
-//     formData.push(element.value)
-//         localStorage.setItem("QuieryFrom",JSON.stringify(formData))
-//   });
-// });
-document.getElementById("inquiryformbtn").addEventListener("click", (e) => {
+
+var  inquiryformbtn=document.getElementById("inquiryformbtn");
+if(inquiryformbtn){
+inquiryformbtn.addEventListener("click", (e) => {
   e.preventDefault()
   var inquiryform = document.getElementById("inquiryform");
+  if(inquiryform) {
   var formData = [];
 
   inquiryform.querySelectorAll("input, select, textarea").forEach(element => {
@@ -223,23 +218,84 @@ document.getElementById("inquiryformbtn").addEventListener("click", (e) => {
   icon: "success"
 });
   }, 1500);
+  
+}
 });
+}
 
-
-
-//   setTimeout(() => {
-//   Swal.fire({
-//   title: "Good job!",
-//   text: "You clicked the button!",
-//   icon: "success"
-// });
-//   }, 1000);
-// })
 //  ====================== QUERY FORM ============================
 
+// =============================================================
+var  inquiryformbtn1=document.getElementById("inquiryformbtn1");
 
+if(inquiryformbtn1){
+inquiryformbtn1.addEventListener("click", (e) => {
+  e.preventDefault()
+  var inquiryform = document.getElementById("inquiryform1");
+  var formData = [];
+
+  inquiryform.querySelectorAll("input, select, textarea").forEach(element => {
+    formData.push(element.value);
+  });
+
+  localStorage.setItem("QueryForm", JSON.stringify(formData));
+ var collapseElement = document.getElementById("collapseExample");
+
+  setTimeout(() => {
+    collapseElement.classList.remove("show");
+    document.querySelector(".btn_inquire").innerHTML=`Inquiry Now`
+
+  Swal.fire({
+  title: "Form Is Submit Successfull",
+
+  icon: "success"
+});
+  }, 1500);
+});
+}
+
+// =============================================================
 
 // SWIPER HOME JS 
+// ========================= <button id="btn_sharte">share now</button>
+var btn_sharte=document.getElementById("btn_sharte")
+if(btn_sharte){
+btn_sharte.addEventListener("click", async () => {
+  if (navigator.share) {
+    try {
+      await navigator.share({
+        title: "New site is here", // Title that you want to share
+        text: "Check out this amazing site! It's full of useful information and cool features.", // Additional text to share
+        url: window.location.href // The URL of the current page
+      });
+      console.log("Shared successfully");
+    } catch (error) {
+      console.log("Error sharing:", error);
+    }
+  } else {
+    console.log("Web Share API is not supported on this browser.");
+  }
+});
+}
+// =================================================================
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const collapseElement = document.getElementById("collapseExample");
+
+  
+    collapseElement.addEventListener("shown.bs.collapse", () => {
+         document.querySelector(".btn_inquire").innerHTML=` <i class="fa-solid fa-xmark "></i>`
+    })
+    
+
+    collapseElement.addEventListener("hidden.bs.collapse", () => {
+     document.querySelector(".btn_inquire").innerHTML=`Inquiry Now`
+    });
+  });
+
+
+// =================================================================
+
 // Get elements{
   var swiper = new Swiper(".mySwiper", {
   
