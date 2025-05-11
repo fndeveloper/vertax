@@ -37,7 +37,7 @@ window.addEventListener("scroll", function () {
     document.getElementById("topbtn").innerHTML = `<i class="fa-solid fa-arrow-up"></i>`;
   }
   else {
-    this.document.getElementById("topbtn").innerHTML = scrollProgress.toFixed(0) + "%";
+    // this.document.getElementById("topbtn").innerHTML = scrollProgress.toFixed(0) + "%";
 
   }
   navunder.style.width = `${scrollProgress}vw`
@@ -263,11 +263,11 @@ if(btn_sharte){
 btn_sharte.addEventListener("click", async () => {
   if (navigator.share) {
     try {
-      await navigator.share({
-        title: "New site is here", // Title that you want to share
-        text: "Check out this amazing site! It's full of useful information and cool features.", // Additional text to share
-        url: window.location.href // The URL of the current page
-      });
+    await navigator.share({
+  title: "New site is here",
+  text: "Check out this amazing site! It's full of useful information and cool features.",
+  url: window.location.href
+});
       console.log("Shared successfully");
     } catch (error) {
       console.log("Error sharing:", error);

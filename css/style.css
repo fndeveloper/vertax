@@ -1204,7 +1204,9 @@ footer {
         height: auto !important;
     }
 }
-
+.left_side_div{
+    position: relative !important;
+}
 .dfd>div {
     padding: 10px;
     border-radius: 15px;
@@ -1358,8 +1360,7 @@ footer {
 @media (min-width:992px) {
     .sticky-element {
         position: sticky !important;
-        /* max-height: 140vh !important; */
-        top: 2%;
+        top: 0% !important;
 
         height: max-content !important;
         z-index: 10;

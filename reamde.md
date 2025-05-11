@@ -1,4 +1,4 @@
-<button class="btn-53 col-2">
+<button class="btn-53 ">
   <div class="original">Shedule Meeting</div>
   <a href="" class="text-white  text-decoration-none">
   <div class="letters">
