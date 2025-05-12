@@ -1207,6 +1207,9 @@ footer {
 .left_side_div{
     position: relative !important;
 }
+.left_side_div p {
+   text-align: justify  !important;
+}
 .border-radious{
 box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;}
 .dfd>div {
@@ -1830,6 +1833,7 @@ swiper-slide img {
     position: sticky !important;
     right: 0% !important;
     bottom: 2% !important;
+    z-index: 5500 !important;
 }
 
 .collapse_quiry form input,
@@ -1840,6 +1844,7 @@ swiper-slide img {
 .collapse_quiry {
     background-color: white !important;
     border-radius: 15px;
+    
     border: 1px solid rgb(221, 221, 221);
 }
 
