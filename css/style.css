@@ -1833,7 +1833,7 @@ swiper-slide img {
     position: sticky !important;
     right: 0% !important;
     bottom: 2% !important;
-    z-index: 5500 !important;
+    z-index: 500 !important;
 }
 
 .collapse_quiry form input,
