@@ -1207,6 +1207,8 @@ footer {
 .left_side_div{
     position: relative !important;
 }
+.border-radious{
+box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;}
 .dfd>div {
     padding: 10px;
     border-radius: 15px;
@@ -1360,7 +1362,7 @@ footer {
 @media (min-width:992px) {
     .sticky-element {
         position: sticky !important;
-        top: 0% !important;
+        top: 12% !important;
 
         height: max-content !important;
         z-index: 10;
@@ -1400,23 +1402,12 @@ footer {
 }
 
 .border-radious {
+    background-color: white !important;
     border-radius: 20px !important;
 }
-
-/* ACCORDIAN */
-.accordion {
-    background-color: var(--bg-color);
-    color: white;
-    margin: 2px 0px;
-    border-radius: 20px;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    /* font-size: 15px; */
-    transition: 0.4s;
+.accordion-button:not(.collapsed) {
+      background-color: var(--color1) !important;
+    color: white !important;
 }
 
 .active,
@@ -1838,7 +1829,7 @@ swiper-slide img {
     height: max-content !important;
     position: sticky !important;
     right: 0% !important;
-    bottom: 5% !important;
+    bottom: 2% !important;
 }
 
 .collapse_quiry form input,
