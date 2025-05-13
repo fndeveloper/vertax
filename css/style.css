@@ -61,7 +61,7 @@ body {
     transition: 0.5s ease-in-out !important;
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     position: absolute !important;
-    bottom: -30% !important;
+    bottom: -15% !important;
     background-color: rgb(255, 255, 255) !important;
     border: 1px solid rgba(255, 255, 255, 0.233);
     color: var(--bg-color) !important;
@@ -245,12 +245,12 @@ img {
 
 .large_nav {
     position: absolute !important;
-    width: 98% !important;
+    width: 98.2% !important;
     top: 2%;
-    margin: 0% 1% !important;
+    margin: 0% 0.8% !important;
 
-    border-radius: 50px !important;
-    padding: 0%;
+    border-radius: 30px !important;
+    padding: 15px 0px !important;
     background-color: transparent !important;
     background-color: rgb(255, 255, 255) !important;
     backdrop-filter: blur(20px);
