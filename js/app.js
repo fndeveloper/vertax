@@ -282,7 +282,7 @@ btn_sharte.addEventListener("click", async () => {
   document.addEventListener("DOMContentLoaded", () => {
     const collapseElement = document.getElementById("collapseExample");
 
-  
+  if(collapseElement){
     collapseElement.addEventListener("shown.bs.collapse", () => {
          document.querySelector(".btn_inquire").innerHTML=` <i class="fa-solid fa-xmark "></i>`
     })
@@ -291,7 +291,9 @@ btn_sharte.addEventListener("click", async () => {
     collapseElement.addEventListener("hidden.bs.collapse", () => {
      document.querySelector(".btn_inquire").innerHTML=`Inquiry Now`
     });
+  }
   });
+
 
 
 // =================================================================
