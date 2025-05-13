@@ -1,6 +1,6 @@
 // ========================== HEADER FETCH START ======================================
 var header = document.getElementById("header")
-
+if(header){
 fetch("header.html")
   .then(e => e.text())
   .then((e) => {
@@ -10,11 +10,13 @@ fetch("header.html")
   `
 
   })
+}
+
 
 // ========================== HEADER FETCH END ======================================
 // ========================== FOOTER FETCH START ======================================
 var footer = document.getElementById("footer")
-
+if(footer){
 fetch("footer.html")
   .then(e => e.text())
   .then((e) => {
@@ -24,7 +26,7 @@ fetch("footer.html")
   `
 
   })
-
+}
 // ========================== FOOTER FETCH END ======================================
 
 
