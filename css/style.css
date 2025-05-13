@@ -1678,19 +1678,17 @@ img {
     position: absolute;
     opacity: 1 !important;
     outline: none;
-    background-color: var(--bg-color) !important;
 }
 
 .iti .iti__selected-dial-code {
-    color: white !important;
+    color: rgb(0, 0, 0) !important;
 }
 
 .iti__country-list {
     overflow-x: hidden !important;
-    width: 390% !important;
-    background-color: var(--bg-color) !important;
+    width: 420% !important;
     /* Apni background color value rakho */
-    color: white !important;
+    color: rgb(0, 0, 0) !important;
     /* Text ko white karne ke liye */
 }
 
