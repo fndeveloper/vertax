@@ -71,6 +71,7 @@ body {
 }
 
 @media (max-width:992px) {
+
     .glass-card {
         position: static !important;
         bottom: 0% !important;
@@ -1187,7 +1188,7 @@ footer {
 .navbar .dropdown-menu .dropdown-item {
     transition: 0.2s ease-in-out !important;
     color: #999898 !important;
-    font-size: 14px !important;
+    font-size: 14px ;
 
 
 
@@ -1204,6 +1205,9 @@ footer {
 }
 
 @media (max-width:992px) {
+    .offcanvas .dropdown-menu    .dropdown-item{
+        font-size: 13px !important;
+    }
     .position_sticky {
         height: auto !important;
     }
